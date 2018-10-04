@@ -1,0 +1,9 @@
+/home/ise/Documents/Firmware/firmware-ethernet/ExampleProject/ise/scrodEthernetExample.ngc 1537585551
+coregen/fifo18x16.ngc 1537585473
+coregen/bram8x3000.ngc 1537585472
+coregen/fifo8x64.ngc 1537585473
+coregen/fifoDist8x16.ngc 1537585472
+coregen/udp64kfifo.ngc 1537585472
+coregen/fifo16x64.ngc 1537585473
+coregen/fifo32x512RxAxi.ngc 1537585472
+OK
