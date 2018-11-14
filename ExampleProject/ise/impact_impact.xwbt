@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/kurtis/github/firmware-ethernet/ExampleProject/ise/impact.xsl
+OUTFILE=/home/kurtis/github/firmware-ethernet/ExampleProject/ise/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/home/kurtis/github/firmware-ethernet/ExampleProject/ise
+LICENSE=iMPACT
+USER_INFO=iMPACT

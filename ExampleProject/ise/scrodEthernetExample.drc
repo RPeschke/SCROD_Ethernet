@@ -1,0 +1,130 @@
+Release 14.7 Drc P.20160913 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Wed Nov 14 02:57:05 2018
+
+drc -z scrodEthernetExample.ncd scrodEthernetExample.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   U_CommandInterpreter/r_state[4]_PWR_128_o_Mux_263_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/anPhyTxData_data<10>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/anPhyTxData_data<7>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/anPhyTxData_data<2>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16/U0/xst_fifo_generator/g
+   convfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16/U0/xst_fifo_generator/g
+   convfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16/U0/xst_fifo_generator/g
+   convfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderMac<4
+   ><2>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderMac<3
+   ><4>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderMac<3
+   ><2>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderMac<3
+   ><1>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderMac<1
+   ><0>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderIp<3>
+   <6>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderIp<2>
+   <5>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderIp<2>
+   <3>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderIp<0>
+   <2>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderIp<0>
+   <0>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_EthFrameTx/ethTxEtherType<
+   1>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16/U0/xst_
+   fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mr
+   am_RAM3_RAMD_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16/U0/xst_
+   fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mr
+   am_RAM1_RAMD_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16/U0/xst_
+   fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mr
+   am_RAM2_RAMD_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[0].U_IPv4Tx/ipProtoc
+   ol<0>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[1].U_IPv4Tx/ipProtoc
+   ol<0>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/g
+   convfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/g
+   convfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/g
+   convfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_RxBufReset1/GLOBAL_LOGIC0> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_RxBufReset0/GLOBAL_LOGIC0> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_S6EthTop/U_TxReset1/GLOBAL_LOGIC0>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_S6EthTop/U_TxReset0/GLOBAL_LOGIC0>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_S6EthTop/U_RxReset0/GLOBAL_LOGIC0>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_RstSyncUser/GLOBAL_LOGIC0> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_S6EthTop/U_RstSync62/GLOBAL_LOGIC0>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_S6EthTop/U_RstSync125/GLOBAL_LOGIC0>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_S6EthTop/U_PwrUpRst/GLOBAL_LOGIC0>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U_TpGenTx/numWords<8>> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+DRC detected 0 errors and 38 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
