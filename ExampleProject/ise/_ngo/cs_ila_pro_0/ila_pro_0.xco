@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Tue Sep 25 18:55:49 2018
+# Date: Fri Nov 16 04:46:43 2018
 #
 ##############################################################
 #
@@ -116,7 +116,7 @@ CSET max_sequence_levels=16
 CSET number_of_trigger_ports=1
 CSET sample_data_depth=1024
 CSET sample_on=Rising
-CSET trigger_port_width_1=40
+CSET trigger_port_width_1=38
 CSET trigger_port_width_10=1
 CSET trigger_port_width_11=1
 CSET trigger_port_width_12=1
@@ -135,7 +135,7 @@ CSET trigger_port_width_9=1
 CSET use_rpms=true
 # END Parameters
 # BEGIN Extra information
-MISC pkg_timestamp=2013-10-13T14:13:15Z
+MISC pkg_timestamp=2016-11-22T05:21:57Z
 # END Extra information
 GENERATE
-# CRC: 99079d7f
+# CRC: 7516336d

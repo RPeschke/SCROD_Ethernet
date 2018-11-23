@@ -1,5 +1,5 @@
 The following files were generated for 'ila_pro_0' in directory
-/home/kurtis/github/firmware-ethernet/ExampleProject/ise/_ngo/cs_ila_pro_0/
+/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/ise/_ngo/cs_ila_pro_0/
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.

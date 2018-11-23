@@ -383,8 +383,8 @@ WARNING:HDLCompiler:92 - "/home/ise/Documents/Firmware/t/firmware-ethernet/Examp
 INFO:HDLCompiler:679 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/TpGenTx.vhd" Line 144. Case statement is complete. others clause is never selected
 
 Elaborating entity <CommandInterpreter> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" Line 150: Assignment to statenum ignored, since the identifier is never used
-INFO:HDLCompiler:679 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" Line 493. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" Line 158: Assignment to statenum ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" Line 501. Case statement is complete. others clause is never selected
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -401,12 +401,13 @@ INFO:Xst:3210 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject
 INFO:Xst:3210 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/projectSrc/scrodEthernetExample.vhd" line 115: Output port <ethSync> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/projectSrc/scrodEthernetExample.vhd" line 115: Output port <ethReady> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
     Found 16-bit register for signal <regRdData>.
+    Found 16-bit register for signal <numWords>.
     Found 16-bit register for signal <waitCyclesHigh>.
     Found 16-bit register for signal <waitCyclesLow>.
     Found 1-bit register for signal <regAck>.
-    Found 16-bit 4-to-1 multiplexer for signal <_n0063> created at line 237.
+    Found 16-bit 4-to-1 multiplexer for signal <_n0073> created at line 237.
     Summary:
-	inferred  49 D-type flip-flop(s).
+	inferred  65 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
 Unit <scrodEthernetExample> synthesized.
 
@@ -1538,7 +1539,6 @@ Synthesizing Unit <CommandInterpreter>.
         REG_ADDR_BITS_G = 16
         REG_DATA_BITS_G = 16
         TIMEOUT_G = 125000
-    Found 5-bit register for signal <r_state>.
     Found 16-bit register for signal <r_regAddr>.
     Found 16-bit register for signal <r_regWrData>.
     Found 16-bit register for signal <r_regRdData>.
@@ -1555,12 +1555,13 @@ Synthesizing Unit <CommandInterpreter>.
     Found 1-bit register for signal <r_noResponse>.
     Found 32-bit register for signal <r_errFlags>.
     Found 32-bit register for signal <r_timeoutCnt>.
+    Found 5-bit register for signal <r_state>.
     Found finite state machine <FSM_20> for signal <r_state>.
     -----------------------------------------------------------------------
     | States             | 18                                             |
     | Transitions        | 62                                             |
     | Inputs             | 20                                             |
-    | Outputs            | 14                                             |
+    | Outputs            | 7                                              |
     | Clock              | usrClk (rising_edge)                           |
     | Reset              | usrRst (positive)                              |
     | Reset type         | synchronous                                    |
@@ -1569,36 +1570,33 @@ Synthesizing Unit <CommandInterpreter>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_45_OUT> created at line 220.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_56_OUT> created at line 239.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_68_OUT> created at line 259.
-    Found 32-bit adder for signal <r_checksum[31]_rxData[31]_add_103_OUT> created at line 314.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_115_OUT> created at line 336.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_117_OUT> created at line 340.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_121_OUT> created at line 351.
-    Found 32-bit adder for signal <r_timeoutCnt[31]_GND_278_o_add_148_OUT> created at line 385.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_152_OUT> created at line 395.
-    Found 32-bit adder for signal <r_checksum[31]_GND_278_o_add_170_OUT> created at line 416.
-    Found 32-bit adder for signal <r_checksum[31]_GND_278_o_add_190_OUT> created at line 438.
-    Found 32-bit adder for signal <r_checksum[31]_GND_278_o_add_209_OUT> created at line 458.
-    Found 32-bit adder for signal <r_checksum[31]_r_txData[31]_add_213_OUT> created at line 463.
-    Found 8-bit adder for signal <r_wordOutCnt[7]_GND_278_o_add_214_OUT> created at line 464.
-    Found 32-bit subtractor for signal <GND_278_o_GND_278_o_sub_115_OUT<31:0>> created at line 332.
-    Found 32-bit 7-to-1 multiplexer for signal <_n0536> created at line 467.
-WARNING:Xst:737 - Found 1-bit latch for signal <numWord<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <numWord<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <numWord<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <numWord<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <numWord<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <numWord<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <numWord<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <numWord<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator greater for signal <GND_278_o_rxData[31]_LessThan_45_o> created at line 219
-    Found 32-bit comparator equal for signal <n0064> created at line 339
+    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_43_OUT> created at line 225.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_45_OUT> created at line 228.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_54_OUT> created at line 243.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_56_OUT> created at line 247.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_65_OUT> created at line 262.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_68_OUT> created at line 267.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_77_OUT> created at line 288.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_87_OUT> created at line 305.
+    Found 32-bit adder for signal <r_checksum[31]_rxData[31]_add_103_OUT> created at line 322.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_105_OUT> created at line 329.
+    Found 32-bit adder for signal <r_errFlags[31]_PWR_127_o_add_115_OUT> created at line 344.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_117_OUT> created at line 348.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_121_OUT> created at line 359.
+    Found 32-bit adder for signal <r_timeoutCnt[31]_GND_278_o_add_148_OUT> created at line 393.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_152_OUT> created at line 403.
+    Found 32-bit adder for signal <r_checksum[31]_GND_278_o_add_170_OUT> created at line 424.
+    Found 32-bit adder for signal <r_checksum[31]_GND_278_o_add_190_OUT> created at line 446.
+    Found 32-bit adder for signal <r_checksum[31]_GND_278_o_add_209_OUT> created at line 466.
+    Found 32-bit adder for signal <r_checksum[31]_r_txData[31]_add_213_OUT> created at line 471.
+    Found 8-bit adder for signal <r_wordOutCnt[7]_GND_278_o_add_214_OUT> created at line 472.
+    Found 32-bit subtractor for signal <GND_278_o_GND_278_o_sub_115_OUT<31:0>> created at line 340.
+    Found 32-bit 7-to-1 multiplexer for signal <_n0538> created at line 475.
+    Found 32-bit comparator greater for signal <GND_278_o_rxData[31]_LessThan_45_o> created at line 227
+    Found 32-bit comparator equal for signal <n0072> created at line 347
     Summary:
-	inferred  15 Adder/Subtractor(s).
+	inferred  21 Adder/Subtractor(s).
 	inferred 277 D-type flip-flop(s).
-	inferred   8 Latch(s).
 	inferred   2 Comparator(s).
 	inferred  51 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
@@ -1608,7 +1606,7 @@ Unit <CommandInterpreter> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 107
+# Adders/Subtractors                                   : 113
  12-bit adder                                          : 4
  12-bit subtractor                                     : 2
  13-bit adder                                          : 2
@@ -1625,7 +1623,7 @@ Macro Statistics
  20-bit adder                                          : 1
  3-bit adder                                           : 6
  3-bit subtractor                                      : 4
- 32-bit adder                                          : 19
+ 32-bit adder                                          : 25
  32-bit subtractor                                     : 2
  4-bit adder                                           : 2
  4-bit subtractor                                      : 4
@@ -1635,12 +1633,12 @@ Macro Statistics
  7-bit adder                                           : 2
  8-bit adder                                           : 3
  8-bit subtractor                                      : 1
-# Registers                                            : 381
+# Registers                                            : 382
  1-bit register                                        : 85
  12-bit register                                       : 5
  13-bit register                                       : 3
  14-bit register                                       : 2
- 16-bit register                                       : 50
+ 16-bit register                                       : 51
  18-bit register                                       : 1
  2-bit register                                        : 29
  20-bit register                                       : 1
@@ -1650,8 +1648,6 @@ Macro Statistics
  4-bit register                                        : 3
  5-bit register                                        : 1
  8-bit register                                        : 149
-# Latches                                              : 8
- 1-bit latch                                           : 8
 # Comparators                                          : 30
  14-bit comparator not equal                           : 1
  16-bit comparator greater                             : 2
@@ -1732,6 +1728,7 @@ INFO:Xst:2261 - The FF/Latch <r_header1_14> in Unit <G_UdpTxInstance[0].U_IPv4Tx
    <r_header4Checksum_21> <r_header4Checksum_22> <r_header4Checksum_23> <r_header4Checksum_24> <r_header4Checksum_25> <r_header4Checksum_26> <r_header4Checksum_27> <r_header4Checksum_28> <r_header4Checksum_29> <r_header4Checksum_30> <r_header4Checksum_31> 
 INFO:Xst:2261 - The FF/Latch <r_ipProtocol_1> in Unit <G_UdpTxInstance[0].U_UdpTxFragmenter> is equivalent to the following 5 FFs/Latches, which will be removed : <r_ipProtocol_2> <r_ipProtocol_3> <r_ipProtocol_5> <r_ipProtocol_6> <r_ipProtocol_7> 
 INFO:Xst:2261 - The FF/Latch <r_ipProtocol_0> in Unit <G_UdpTxInstance[0].U_UdpTxFragmenter> is equivalent to the following FF/Latch, which will be removed : <r_ipProtocol_4> 
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_1> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_header2Checksum_2> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_header2Checksum_3> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_header2Checksum_5> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
@@ -1759,8 +1756,7 @@ WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_6> has a constant value of 0 in block 
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_7> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_0> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_1> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_2> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_3> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_12> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_13> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_14> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_15> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
@@ -1789,7 +1785,8 @@ WARNING:Xst:1293 - FF/Latch <r_header3_26> has a constant value of 0 in block <G
 WARNING:Xst:1293 - FF/Latch <r_header3_27> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_header3_28> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_header3_29> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_1> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_6> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_7> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_0> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_1> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_2> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
@@ -1817,8 +1814,8 @@ WARNING:Xst:1293 - FF/Latch <r_myUdpPort_12> has a constant value of 0 in block 
 WARNING:Xst:1293 - FF/Latch <r_myUdpPort_13> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myUdpPort_14> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myUdpPort_15> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <numWord_14> (without init value) has a constant value of 0 in block <U_CommandInterpreter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <numWord_7> (without init value) has a constant value of 1 in block <U_CommandInterpreter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_2> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_3> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_4> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_5> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_0> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
@@ -1846,8 +1843,6 @@ WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_2> has a constant value of 0 in block 
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_3> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_4> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_5> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_6> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_7> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_senderMac_2_0> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_senderMac_2_1> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_senderMac_2_2> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
@@ -1876,7 +1871,6 @@ WARNING:Xst:1293 - FF/Latch <r_op_11> has a constant value of 0 in block <U_ArpP
 WARNING:Xst:1293 - FF/Latch <r_op_12> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_op_13> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_op_14> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_15> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_txData_0> has a constant value of 0 in block <U_AutoNeg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_byteWidth_0> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_byteWidth_1> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
@@ -1906,6 +1900,7 @@ WARNING:Xst:1293 - FF/Latch <r_senderMac_0_4> has a constant value of 0 in block
 WARNING:Xst:1293 - FF/Latch <r_senderMac_0_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_senderMac_0_6> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_senderMac_0_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_12> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_header3_13> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_header3_14> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_header3_15> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
@@ -1934,7 +1929,7 @@ WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_2> has a constant value of 0 in blo
 WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_3> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_5> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_11> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_12> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_15> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_byteWidth_0> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_byteWidth_1> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_byteWidth_2> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
@@ -1963,7 +1958,6 @@ WARNING:Xst:1293 - FF/Latch <r_header3_7> has a constant value of 0 in block <G_
 WARNING:Xst:1293 - FF/Latch <r_header3_9> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_header3_10> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_header3_11> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_12> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <CommandInterpreter>.
 The following registers are absorbed into counter <r_wordOutCnt>: 1 register on signal <r_wordOutCnt>.
@@ -2024,7 +2018,7 @@ Unit <UdpTxFragmenter_2> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 87
+# Adders/Subtractors                                   : 93
  12-bit adder                                          : 2
  12-bit subtractor                                     : 2
  13-bit adder                                          : 2
@@ -2037,7 +2031,7 @@ Macro Statistics
  20-bit adder                                          : 1
  3-bit adder                                           : 5
  3-bit subtractor                                      : 4
- 32-bit adder                                          : 16
+ 32-bit adder                                          : 22
  32-bit subtractor                                     : 2
  4-bit adder                                           : 1
  5-bit adder                                           : 3
@@ -2060,8 +2054,8 @@ Macro Statistics
  8-bit up counter                                      : 1
 # Accumulators                                         : 1
  4-bit down loadable accumulator                       : 1
-# Registers                                            : 3553
- Flip-Flops                                            : 3553
+# Registers                                            : 3569
+ Flip-Flops                                            : 3569
 # Comparators                                          : 30
  14-bit comparator not equal                           : 1
  16-bit comparator greater                             : 2
@@ -2295,8 +2289,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_ipProtocol_5> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_ipProtocol_6> has a constant value of 0 in block <UdpTxFragmenter_2>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_ipProtocol_7> has a constant value of 0 in block <UdpTxFragmenter_2>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_ipDataValid> (without init value) has a constant value of 0 in block <UdpTxFragmenter_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <numWord_14> (without init value) has a constant value of 0 in block <CommandInterpreter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <numWord_7> (without init value) has a constant value of 1 in block <CommandInterpreter>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <r_ethTxSrcMac_4_2> in Unit <EthFrameTx> is equivalent to the following 8 FFs/Latches, which will be removed : <r_ethTxSrcMac_4_6> <r_ethTxSrcMac_3_1> <r_ethTxSrcMac_3_2> <r_ethTxSrcMac_3_4> <r_ethTxSrcMac_3_6> <r_ethTxSrcMac_1_0> <r_ethTxSrcMac_1_1> <r_ethTxSrcMac_0_0> 
 INFO:Xst:2261 - The FF/Latch <r_txSenderMac_3_1> in Unit <ArpResponder> is equivalent to the following 9 FFs/Latches, which will be removed : <r_txSenderMac_3_2> <r_txSenderMac_3_4> <r_txSenderMac_3_6> <r_txSenderMac_4_2> <r_txSenderMac_4_6> <r_txSenderMac_1_0> <r_txSenderMac_1_1> <r_txSenderMac_0_0> <r_txOp_1> 
 INFO:Xst:2261 - The FF/Latch <r_header0_24> in Unit <IPv4Tx> is equivalent to the following 3 FFs/Latches, which will be removed : <r_header0_26> <r_header0_30> <r_header2Checksum_9> 
@@ -3542,8 +3534,8 @@ Unit <U_MacRx> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2823
- Flip-Flops                                            : 2823
+# Registers                                            : 2839
+ Flip-Flops                                            : 2839
 # Shift Registers                                      : 9
  5-bit shift register                                  : 9
 
@@ -3568,31 +3560,30 @@ Top Level Output File Name         : scrodEthernetExample.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 7483
+# BELS                             : 8181
 #      GND                         : 42
-#      INV                         : 299
-#      LUT1                        : 522
-#      LUT2                        : 853
-#      LUT3                        : 544
-#      LUT4                        : 807
-#      LUT5                        : 531
-#      LUT6                        : 1243
-#      MUXCY                       : 1323
-#      MUXF7                       : 95
+#      INV                         : 317
+#      LUT1                        : 696
+#      LUT2                        : 852
+#      LUT3                        : 557
+#      LUT4                        : 771
+#      LUT5                        : 571
+#      LUT6                        : 1338
+#      MUXCY                       : 1508
+#      MUXF7                       : 113
 #      VCC                         : 31
-#      XORCY                       : 1193
-# FlipFlops/Latches                : 4186
+#      XORCY                       : 1385
+# FlipFlops/Latches                : 4196
 #      FD                          : 100
 #      FDC                         : 583
 #      FDCE                        : 342
-#      FDE                         : 211
+#      FDE                         : 227
 #      FDP                         : 137
 #      FDPE                        : 20
 #      FDR                         : 278
 #      FDRE                        : 2490
 #      FDS                         : 1
 #      FDSE                        : 18
-#      LD                          : 6
 # RAMS                             : 74
 #      RAM32M                      : 6
 #      RAM64M                      : 3
@@ -3620,18 +3611,18 @@ Selected Device : 6slx150tfgg676-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            4186  out of  184304     2%  
- Number of Slice LUTs:                 4844  out of  92152     5%  
-    Number used as Logic:              4799  out of  92152     5%  
+ Number of Slice Registers:            4196  out of  184304     2%  
+ Number of Slice LUTs:                 5147  out of  92152     5%  
+    Number used as Logic:              5102  out of  92152     5%  
     Number used as Memory:               45  out of  21680     0%  
        Number used as RAM:               36
        Number used as SRL:                9
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7166
-   Number with an unused Flip Flop:    2980  out of   7166    41%  
-   Number with an unused LUT:          2322  out of   7166    32%  
-   Number of fully used LUT-FF pairs:  1864  out of   7166    26%  
+ Number of LUT Flip Flop pairs used:   7485
+   Number with an unused Flip Flop:    3289  out of   7485    43%  
+   Number with an unused LUT:          2338  out of   7485    31%  
+   Number of fully used LUT-FF pairs:  1858  out of   7485    24%  
    Number of unique control sets:       299
 
 IO Utilization: 
@@ -3661,18 +3652,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------------------------------------------------------------+-----------------------------------------+-------+
-Clock Signal                                                                                  | Clock buffer(FF name)                   | Load  |
-----------------------------------------------------------------------------------------------+-----------------------------------------+-------+
-U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>                                              | DCM_SP:CLK0                             | 3970  |
-U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>                                              | DCM_SP:CLKDV                            | 254   |
-fabClkP                                                                                       | IBUFGDS+BUFG                            | 39    |
-U_CommandInterpreter/r_state[4]_PWR_128_o_Mux_263_o(U_CommandInterpreter/r_state__n1074<0>1:O)| NONE(*)(U_CommandInterpreter/numWord_10)| 6     |
-----------------------------------------------------------------------------------------------+-----------------------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+------------------------------------------------+------------------------+-------+
+Clock Signal                                    | Clock buffer(FF name)  | Load  |
+------------------------------------------------+------------------------+-------+
+U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>| DCM_SP:CLK0            | 3986  |
+U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>| DCM_SP:CLKDV           | 254   |
+fabClkP                                         | IBUFGDS+BUFG           | 39    |
+------------------------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -3682,7 +3668,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 8.306ns (Maximum Frequency: 120.397MHz)
+   Minimum period: 8.551ns (Maximum Frequency: 116.945MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
    Maximum combinational path delay: No path found
@@ -3693,10 +3679,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>'
-  Clock period: 8.306ns (frequency: 120.397MHz)
-  Total number of paths / destination ports: 284279 / 13350
+  Clock period: 8.551ns (frequency: 116.945MHz)
+  Total number of paths / destination ports: 286147 / 13382
 -------------------------------------------------------------------------
-Delay:               8.306ns (Levels of Logic = 11)
+Delay:               8.551ns (Levels of Logic = 11)
   Source:            U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[1].U_UdpBufferRx/U_UdpRxAxiFifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/dout_i_4 (FF)
   Destination:       U_CommandInterpreter/r_errFlags_0 (FF)
   Source Clock:      U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0> rising
@@ -3714,16 +3700,16 @@ Delay:               8.306ns (Levels of Logic = 11)
      end scope: 'U_S6EthTop:userRxData<1><27>'
      begin scope: 'U_CommandInterpreter:rxData<27>'
      LUT6:I0->O            1   0.203   0.808  n0001<31>11 (n0001<31>11)
-     LUT3:I0->O            2   0.205   0.617  n0001<31>14 (n0001<31>1)
-     LUT6:I5->O            3   0.205   0.651  n0024<31>1 (n0024<31>1)
-     LUT6:I5->O            2   0.205   0.617  n0026<31> (n0026)
-     LUT6:I5->O            2   0.205   0.616  _n1003_inv2311 (_n1003_inv231)
-     MUXF7:S->O            2   0.148   0.617  _n1003_inv6_SW0 (N70)
-     LUT6:I5->O           17   0.205   1.028  _n1003_inv7_rstpot (_n1003_inv7_rstpot)
+     LUT3:I0->O            3   0.205   0.651  n0001<31>14 (n0001<31>1)
+     LUT6:I5->O            3   0.205   0.879  n0029<31> (n0029)
+     LUT6:I3->O            1   0.205   0.580  _n1003_inv2 (_n1003_inv2)
+     LUT6:I5->O            1   0.205   0.580  _n1003_inv3 (_n1003_inv4)
+     LUT6:I5->O            2   0.205   0.617  _n1003_inv4 (_n1003_inv5)
+     LUT5:I4->O           17   0.205   1.028  _n1003_inv5_rstpot (_n1003_inv5_rstpot)
      LUT3:I2->O            1   0.205   0.000  r_errFlags_0_dpot (r_errFlags_0_dpot)
      FDRE:D                    0.102          r_errFlags_0
     ----------------------------------------
-    Total                      8.306ns (2.130ns logic, 6.176ns route)
+    Total                      8.551ns (2.187ns logic, 6.364ns route)
                                        (25.6% logic, 74.4% route)
 
 =========================================================================
@@ -3754,23 +3740,14 @@ Delay:               2.880ns (Levels of Logic = 2)
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_PWR_128_o_Mux_263_o
+Clock to Setup on destination clock U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>
 ------------------------------------------------+---------+---------+---------+---------+
                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------------------+---------+---------+---------+---------+
-U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>|         |         |    3.087|         |
+U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>|    8.551|         |         |         |
+fabClkP                                         |    1.436|         |         |         |
 ------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>
----------------------------------------------------+---------+---------+---------+---------+
-                                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------------------------------------+---------+---------+---------+---------+
-U_CommandInterpreter/r_state[4]_PWR_128_o_Mux_263_o|         |    1.717|         |         |
-U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>   |    8.306|         |         |         |
-fabClkP                                            |    1.436|         |         |         |
----------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock fabClkP
 ---------------+---------+---------+---------+---------+
@@ -3783,15 +3760,15 @@ fabClkP        |    2.880|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 33.00 secs
-Total CPU time to Xst completion: 28.89 secs
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 22.55 secs
  
 --> 
 
 
-Total memory usage is 556800 kilobytes
+Total memory usage is 558868 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 1092 (   0 filtered)
-Number of infos    :  331 (   0 filtered)
+Number of warnings : 1080 (   0 filtered)
+Number of infos    :  330 (   0 filtered)
 

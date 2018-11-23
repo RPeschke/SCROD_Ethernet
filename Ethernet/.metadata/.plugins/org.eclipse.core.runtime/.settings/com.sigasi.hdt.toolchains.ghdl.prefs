@@ -1,0 +1,2 @@
+com.sigasi.toolchains.ghdl.ghdl.options=--ieee\=synopsys -Wbinding -Wreserved -Wlibrary -Wvital-generic -Wdelayed-checks -Wbody -Wspecs -Wunused
+eclipse.preferences.version=1

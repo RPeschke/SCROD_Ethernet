@@ -222,8 +222,8 @@ begin
          regRdData   => regRdData,
          regReq      => regReq,
          regOp       => regOp,
-         regAck      => regAck,
-			numWord     => numWords
+         regAck      => regAck
+			
       );
 
    -- A few registers to toy with
@@ -237,7 +237,7 @@ begin
             case regAddr is
                when x"0000" => regRdData <= numWords;
                                if regOp = '1' then
-                                 -- numWords <= regWrData;
+                                 numWords <= regWrData;
                                end if;
                when x"0001" => regRdData <= waitCyclesHigh;
                                if regOp = '1' then

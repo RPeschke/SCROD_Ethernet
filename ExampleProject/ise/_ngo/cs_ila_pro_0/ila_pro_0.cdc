@@ -1,6 +1,6 @@
 #ChipScope Core Generator Project File Version 3.0
-#Tue Sep 25 08:58:24 HST 2018
-SignalExport.bus<0000>.channelList=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39
+#Fri Nov 16 04:48:14 UTC 2018
+SignalExport.bus<0000>.channelList=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37
 SignalExport.bus<0000>.name=TRIG0
 SignalExport.bus<0000>.offset=0.0
 SignalExport.bus<0000>.precision=0
@@ -46,11 +46,9 @@ SignalExport.triggerChannel<0000><0034>=TRIG0[34]
 SignalExport.triggerChannel<0000><0035>=TRIG0[35]
 SignalExport.triggerChannel<0000><0036>=TRIG0[36]
 SignalExport.triggerChannel<0000><0037>=TRIG0[37]
-SignalExport.triggerChannel<0000><0038>=TRIG0[38]
-SignalExport.triggerChannel<0000><0039>=TRIG0[39]
 SignalExport.triggerPort<0000>.name=TRIG0
 SignalExport.triggerPortCount=1
 SignalExport.triggerPortIsData<0000>=true
-SignalExport.triggerPortWidth<0000>=40
+SignalExport.triggerPortWidth<0000>=38
 SignalExport.type=ila
 
