@@ -22,6 +22,12 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="exampleProject.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Axi_CommandInterpreter.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Axi_CommandInterpreter.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Axi_CommandInterpreter.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Axi_CommandInterpreter.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="Axi_CommandInterpreter.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Axi_CommandInterpreter.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -30,6 +36,10 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="coregen/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/map/scrodEthernetExample_map.nlf"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/map/scrodEthernetExample_map.sdf"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/map/scrodEthernetExample_map.vhd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="scrodEthernetExample.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="scrodEthernetExample.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="scrodEthernetExample.bld"/>
@@ -120,7 +130,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1542491912" xil_pn:in_ck="-7437317353839127954" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-747309185908525570" xil_pn:start_ts="1542491879">
+    <transform xil_pn:end_ts="1543067393" xil_pn:in_ck="5813227894643045950" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-747309185908525570" xil_pn:start_ts="1543067365">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -142,7 +152,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1542491938" xil_pn:in_ck="64210519104827154" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2386396517740767973" xil_pn:start_ts="1542491923">
+    <transform xil_pn:end_ts="1543067418" xil_pn:in_ck="64210519104827154" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2386396517740767973" xil_pn:start_ts="1543067404">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -154,7 +164,7 @@
       <outfile xil_pn:name="scrodEthernetExample_cs.ngc"/>
       <outfile xil_pn:name="scrodEthernetExample_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1542492066" xil_pn:in_ck="-2848211151440128328" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="346394261158932323" xil_pn:start_ts="1542491938">
+    <transform xil_pn:end_ts="1543067535" xil_pn:in_ck="-2848211151440128328" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="346394261158932323" xil_pn:start_ts="1543067418">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -168,7 +178,7 @@
       <outfile xil_pn:name="scrodEthernetExample_summary.xml"/>
       <outfile xil_pn:name="scrodEthernetExample_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1542492139" xil_pn:in_ck="-7003076133056134703" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3717135755049403020" xil_pn:start_ts="1542492066">
+    <transform xil_pn:end_ts="1543067609" xil_pn:in_ck="-7003076133056134703" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3717135755049403020" xil_pn:start_ts="1543067535">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -183,7 +193,7 @@
       <outfile xil_pn:name="scrodEthernetExample_pad.txt"/>
       <outfile xil_pn:name="scrodEthernetExample_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1542492167" xil_pn:in_ck="-8600878992102779959" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="-3099295751571307176" xil_pn:start_ts="1542492139">
+    <transform xil_pn:end_ts="1543067637" xil_pn:in_ck="-8600878992102779959" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="-3099295751571307176" xil_pn:start_ts="1543067609">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -205,18 +215,29 @@
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1542412201" xil_pn:in_ck="-8600878992102792813" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="2386396517740767973" xil_pn:start_ts="1542412201">
+    <transform xil_pn:end_ts="1543014866" xil_pn:in_ck="-8600878992102792813" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="2386396517740767973" xil_pn:start_ts="1543014865">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1542492139" xil_pn:in_ck="-2848211151440128460" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1542492125">
+    <transform xil_pn:end_ts="1543067609" xil_pn:in_ck="-2848211151440128460" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1543067594">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="scrodEthernetExample.twr"/>
       <outfile xil_pn:name="scrodEthernetExample.twx"/>
+    </transform>
+    <transform xil_pn:end_ts="1542998000" xil_pn:in_ck="-1900330400781680154" xil_pn:name="TRAN_postMapSimModel" xil_pn:prop_ck="-8920253632216238541" xil_pn:start_ts="1542997939">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

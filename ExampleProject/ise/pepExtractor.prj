@@ -1,0 +1,4 @@
+work	"../firmware-general/General/rtl/Axi_Commandreceiver.vhd"
+work	"../firmware-general/General/rtl/UtilityPkg.vhd"
+work	"../firmware-general/General/rtl/axiDWORDBi.vhd"
+work	"../firmware-general/General/rtl/axiStreamHelper.vhd"

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Anno" num="67" delta="new" >NCD is not completely routed, some delays may be inaccurate.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mcount_r_eventNum_cy</arg><arg fmt="%s" index="2">( 27 downto 3 )</arg> on block <arg fmt="%s" index="3">TpGenTx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Msub__n0093_cy</arg><arg fmt="%s" index="2">( 27 downto 3 )</arg> on block <arg fmt="%s" index="3">TpGenTx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mcount_r_count_cy</arg><arg fmt="%s" index="2">( 23 downto 3 )</arg> on block <arg fmt="%s" index="3">InitRst</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipAddr</arg> on block <arg fmt="%s" index="2">UdpBufferRx_INST_1</arg> using the data <arg fmt="%s" index="3">ipAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipSrcAddr</arg> on block <arg fmt="%s" index="2">UdpBufferRx_INST_1</arg> using the data <arg fmt="%s" index="3">ipSrcAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipDstAddr</arg> on block <arg fmt="%s" index="2">UdpBufferRx_INST_1</arg> using the data <arg fmt="%s" index="3">ipDstAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_myIpAddr_2</arg><arg fmt="%s" index="2">( 7 downto 3 )</arg> on block <arg fmt="%s" index="3">UdpBufferRx_INST_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_myUdpPort</arg><arg fmt="%s" index="2">( 10 downto 0 )</arg> on block <arg fmt="%s" index="3">UdpBufferRx_INST_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_myIpAddr_0</arg><arg fmt="%s" index="2">( 5 downto 0 )</arg> on block <arg fmt="%s" index="3">UdpBufferRx_INST_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipAddr</arg> on block <arg fmt="%s" index="2">UdpBufferRx</arg> using the data <arg fmt="%s" index="3">ipAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipSrcAddr</arg> on block <arg fmt="%s" index="2">UdpBufferRx</arg> using the data <arg fmt="%s" index="3">ipSrcAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipDstAddr</arg> on block <arg fmt="%s" index="2">UdpBufferRx</arg> using the data <arg fmt="%s" index="3">ipDstAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">NlwRenamedSig_OI_r_udpDstPort</arg><arg fmt="%s" index="2">( 15 downto 0 )</arg> on block <arg fmt="%s" index="3">UdpBufferRx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_myIpAddr_0</arg><arg fmt="%s" index="2">( 4 downto 2 )</arg> on block <arg fmt="%s" index="3">UdpBufferRx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_myIpAddr_2</arg><arg fmt="%s" index="2">( 7 downto 3 )</arg> on block <arg fmt="%s" index="3">UdpBufferRx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_myUdpPort</arg><arg fmt="%s" index="2">( 10 downto 4 )</arg> on block <arg fmt="%s" index="3">UdpBufferRx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipSrcAddr</arg> on block <arg fmt="%s" index="2">IPv4Rx</arg> using the data <arg fmt="%s" index="3">ipSrcAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipDstAddr</arg> on block <arg fmt="%s" index="2">IPv4Rx</arg> using the data <arg fmt="%s" index="3">ipDstAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">ADDERTREE_INTERNAL_Madd1_cy</arg><arg fmt="%s" index="2">( 15 downto 3 )</arg> on block <arg fmt="%s" index="3">IPv4Rx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Madd_GND_138_o_BUS_0023_add_132_OUT_cy</arg><arg fmt="%s" index="2">( 11 downto 3 )</arg> on block <arg fmt="%s" index="3">IPv4Rx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mcount_r_ipPacketId_cy</arg><arg fmt="%s" index="2">( 11 downto 3 )</arg> on block <arg fmt="%s" index="3">UdpTxFragmenter_2</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Madd_n0152_cy</arg><arg fmt="%s" index="2">( 15 downto 6 )</arg> on block <arg fmt="%s" index="3">UdpTxFragmenter_2</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipSrcAddr</arg> on block <arg fmt="%s" index="2">UdpBufferTx_INST_1</arg> using the data <arg fmt="%s" index="3">ipSrcAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipDstAddr</arg> on block <arg fmt="%s" index="2">UdpBufferTx_INST_1</arg> using the data <arg fmt="%s" index="3">ipDstAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipSrcAddr</arg> on block <arg fmt="%s" index="2">UdpBufferTx</arg> using the data <arg fmt="%s" index="3">ipSrcAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipDstAddr</arg> on block <arg fmt="%s" index="2">UdpBufferTx</arg> using the data <arg fmt="%s" index="3">ipDstAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mcount_r_ipPacketId_cy</arg><arg fmt="%s" index="2">( 11 downto 3 )</arg> on block <arg fmt="%s" index="3">UdpTxFragmenter_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Madd_n0152_cy</arg><arg fmt="%s" index="2">( 15 downto 6 )</arg> on block <arg fmt="%s" index="3">UdpTxFragmenter_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipSrcAddr</arg> on block <arg fmt="%s" index="2">IPv4Tx_INST_1</arg> using the data <arg fmt="%s" index="3">ipSrcAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipDstAddr</arg> on block <arg fmt="%s" index="2">IPv4Tx_INST_1</arg> using the data <arg fmt="%s" index="3">ipDstAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mmux__n0639_A_rs_A</arg><arg fmt="%s" index="2">( 18 downto 1 )</arg> on block <arg fmt="%s" index="3">IPv4Tx_INST_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_header0</arg><arg fmt="%s" index="2">( 24 downto 0 )</arg> on block <arg fmt="%s" index="3">IPv4Tx_INST_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_header1</arg><arg fmt="%s" index="2">( 31 downto 0 )</arg> on block <arg fmt="%s" index="3">IPv4Tx_INST_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_header2Checksum</arg><arg fmt="%s" index="2">( 4 downto 0 )</arg> on block <arg fmt="%s" index="3">IPv4Tx_INST_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_header3</arg><arg fmt="%s" index="2">( 31 downto 0 )</arg> on block <arg fmt="%s" index="3">IPv4Tx_INST_1</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipSrcAddr</arg> on block <arg fmt="%s" index="2">IPv4Tx</arg> using the data <arg fmt="%s" index="3">ipSrcAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipDstAddr</arg> on block <arg fmt="%s" index="2">IPv4Tx</arg> using the data <arg fmt="%s" index="3">ipDstAddr&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_header0</arg><arg fmt="%s" index="2">( 24 downto 0 )</arg> on block <arg fmt="%s" index="3">IPv4Tx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_header1</arg><arg fmt="%s" index="2">( 31 downto 0 )</arg> on block <arg fmt="%s" index="3">IPv4Tx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_header3</arg><arg fmt="%s" index="2">( 31 downto 2 )</arg> on block <arg fmt="%s" index="3">IPv4Tx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mmux__n0639_A_rs_A</arg><arg fmt="%s" index="2">( 18 downto 1 )</arg> on block <arg fmt="%s" index="3">IPv4Tx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_header2Checksum</arg><arg fmt="%s" index="2">( 4 downto 0 )</arg> on block <arg fmt="%s" index="3">IPv4Tx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">multIpTxDataIn</arg> on block <arg fmt="%s" index="2">IpV4Arbiter</arg> using the data <arg fmt="%s" index="3">multIpTxDataIn&lt;1&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">U_FifoDist8x16/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg</arg><arg fmt="%s" index="2">( 2 downto 0 )</arg> on block <arg fmt="%s" index="3">IpV4Arbiter</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">macAddress</arg> on block <arg fmt="%s" index="2">ArpResponder</arg> using the data <arg fmt="%s" index="3">macAddress&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipAddresses</arg> on block <arg fmt="%s" index="2">ArpResponder</arg> using the data <arg fmt="%s" index="3">ipAddresses&lt;1&gt;&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpRxSenderMac</arg> on block <arg fmt="%s" index="2">ArpResponder</arg> using the data <arg fmt="%s" index="3">arpRxSenderMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpRxSenderIp</arg> on block <arg fmt="%s" index="2">ArpResponder</arg> using the data <arg fmt="%s" index="3">arpRxSenderIp&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpRxTargetMac</arg> on block <arg fmt="%s" index="2">ArpResponder</arg> using the data <arg fmt="%s" index="3">arpRxTargetMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpRxTargetIp</arg> on block <arg fmt="%s" index="2">ArpResponder</arg> using the data <arg fmt="%s" index="3">arpRxTargetIp&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpTxSenderMac</arg> on block <arg fmt="%s" index="2">ArpResponder</arg> using the data <arg fmt="%s" index="3">arpTxSenderMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpTxSenderIp</arg> on block <arg fmt="%s" index="2">ArpResponder</arg> using the data <arg fmt="%s" index="3">arpTxSenderIp&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpTxTargetMac</arg> on block <arg fmt="%s" index="2">ArpResponder</arg> using the data <arg fmt="%s" index="3">arpTxTargetMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpTxTargetIp</arg> on block <arg fmt="%s" index="2">ArpResponder</arg> using the data <arg fmt="%s" index="3">arpTxTargetIp&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">NlwRenamedSignal_r_txSenderIp_0</arg><arg fmt="%s" index="2">( 2 downto 0 )</arg> on block <arg fmt="%s" index="3">ArpResponder</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ethTxDestMac</arg> on block <arg fmt="%s" index="2">EthFrameTx</arg> using the data <arg fmt="%s" index="3">ethTxDestMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ethTxSrcMac</arg> on block <arg fmt="%s" index="2">EthFrameTx</arg> using the data <arg fmt="%s" index="3">ethTxSrcMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_ethTxEtherType</arg><arg fmt="%s" index="2">( 11 downto 1 )</arg> on block <arg fmt="%s" index="3">EthFrameTx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpSenderMac</arg> on block <arg fmt="%s" index="2">ArpPacketTx</arg> using the data <arg fmt="%s" index="3">arpSenderMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpSenderIp</arg> on block <arg fmt="%s" index="2">ArpPacketTx</arg> using the data <arg fmt="%s" index="3">arpSenderIp&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpTargetMac</arg> on block <arg fmt="%s" index="2">ArpPacketTx</arg> using the data <arg fmt="%s" index="3">arpTargetMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpTargetIp</arg> on block <arg fmt="%s" index="2">ArpPacketTx</arg> using the data <arg fmt="%s" index="3">arpTargetIp&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_senderMac_3</arg><arg fmt="%s" index="2">( 6 downto 1 )</arg> on block <arg fmt="%s" index="3">ArpPacketTx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_senderIp_0</arg><arg fmt="%s" index="2">( 5 downto 0 )</arg> on block <arg fmt="%s" index="3">ArpPacketTx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_senderMac_4</arg><arg fmt="%s" index="2">( 6 downto 2 )</arg> on block <arg fmt="%s" index="3">ArpPacketTx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_senderIp_2</arg><arg fmt="%s" index="2">( 7 downto 3 )</arg> on block <arg fmt="%s" index="3">ArpPacketTx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">macAddr</arg> on block <arg fmt="%s" index="2">EthTx</arg> using the data <arg fmt="%s" index="3">macAddr&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpTxSenderMac</arg> on block <arg fmt="%s" index="2">EthTx</arg> using the data <arg fmt="%s" index="3">arpTxSenderMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpTxSenderIp</arg> on block <arg fmt="%s" index="2">EthTx</arg> using the data <arg fmt="%s" index="3">arpTxSenderIp&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpTxTargetMac</arg> on block <arg fmt="%s" index="2">EthTx</arg> using the data <arg fmt="%s" index="3">arpTxTargetMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpTxTargetIp</arg> on block <arg fmt="%s" index="2">EthTx</arg> using the data <arg fmt="%s" index="3">arpTxTargetIp&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipTxDestMac</arg> on block <arg fmt="%s" index="2">EthTx</arg> using the data <arg fmt="%s" index="3">ipTxDestMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">ethTxEtherType</arg><arg fmt="%s" index="2">( 11 downto 1 )</arg> on block <arg fmt="%s" index="3">EthTx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">_n0092_inv_wg_cy</arg><arg fmt="%s" index="2">( 7 downto 3 )</arg> on block <arg fmt="%s" index="3">EthTx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ethRxSrcMac</arg> on block <arg fmt="%s" index="2">ArpPacketRx</arg> using the data <arg fmt="%s" index="3">ethRxSrcMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ethRxDestMac</arg> on block <arg fmt="%s" index="2">ArpPacketRx</arg> using the data <arg fmt="%s" index="3">ethRxDestMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpSenderMac</arg> on block <arg fmt="%s" index="2">ArpPacketRx</arg> using the data <arg fmt="%s" index="3">arpSenderMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpSenderIp</arg> on block <arg fmt="%s" index="2">ArpPacketRx</arg> using the data <arg fmt="%s" index="3">arpSenderIp&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpTargetMac</arg> on block <arg fmt="%s" index="2">ArpPacketRx</arg> using the data <arg fmt="%s" index="3">arpTargetMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpTargetIp</arg> on block <arg fmt="%s" index="2">ArpPacketRx</arg> using the data <arg fmt="%s" index="3">arpTargetIp&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">macAddress</arg> on block <arg fmt="%s" index="2">EthFrameRx</arg> using the data <arg fmt="%s" index="3">macAddress&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ethRxSrcMac</arg> on block <arg fmt="%s" index="2">EthFrameRx</arg> using the data <arg fmt="%s" index="3">ethRxSrcMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ethRxDestMac</arg> on block <arg fmt="%s" index="2">EthFrameRx</arg> using the data <arg fmt="%s" index="3">ethRxDestMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mcount_r_payloadCount_cy</arg><arg fmt="%s" index="2">( 7 downto 3 )</arg> on block <arg fmt="%s" index="3">EthFrameRx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Msub_n0455_cy</arg><arg fmt="%s" index="2">( 7 downto 3 )</arg> on block <arg fmt="%s" index="3">EthFrameRx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mmux_GND_126_o_GND_126_o_mux_144_OUT_rs_cy</arg><arg fmt="%s" index="2">( 7 downto 3 )</arg> on block <arg fmt="%s" index="3">EthFrameRx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mcount_r_wrAddr_cy</arg><arg fmt="%s" index="2">( 7 downto 3 )</arg> on block <arg fmt="%s" index="3">EthFrameRx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mmux_GND_126_o_GND_126_o_mux_144_OUT_rs_A</arg><arg fmt="%s" index="2">( 2 downto 0 )</arg> on block <arg fmt="%s" index="3">EthFrameRx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">Mcount_r_byteCount_cy</arg><arg fmt="%s" index="2">( 11 downto 3 )</arg> on block <arg fmt="%s" index="3">Eth1000BaseXMacRx</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">macAddr</arg> on block <arg fmt="%s" index="2">EthRx</arg> using the data <arg fmt="%s" index="3">macAddr&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpRxSenderMac</arg> on block <arg fmt="%s" index="2">EthRx</arg> using the data <arg fmt="%s" index="3">arpRxSenderMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpRxSenderIp</arg> on block <arg fmt="%s" index="2">EthRx</arg> using the data <arg fmt="%s" index="3">arpRxSenderIp&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpRxTargetMac</arg> on block <arg fmt="%s" index="2">EthRx</arg> using the data <arg fmt="%s" index="3">arpRxTargetMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">arpRxTargetIp</arg> on block <arg fmt="%s" index="2">EthRx</arg> using the data <arg fmt="%s" index="3">arpRxTargetIp&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ethRxSenderMac</arg> on block <arg fmt="%s" index="2">EthRx</arg> using the data <arg fmt="%s" index="3">ethRxSenderMac&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">macAddr</arg> on block <arg fmt="%s" index="2">EthCore</arg> using the data <arg fmt="%s" index="3">macAddr&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipAddrs</arg> on block <arg fmt="%s" index="2">EthCore</arg> using the data <arg fmt="%s" index="3">ipAddrs&lt;1&gt;&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">udpPorts</arg> on block <arg fmt="%s" index="2">EthCore</arg> using the data <arg fmt="%s" index="3">udpPorts&lt;1&gt;&lt;15:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">userTxData</arg> on block <arg fmt="%s" index="2">EthCore</arg> using the data <arg fmt="%s" index="3">userTxData&lt;1&gt;&lt;31:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">userRxData</arg> on block <arg fmt="%s" index="2">EthCore</arg> using the data <arg fmt="%s" index="3">userRxData&lt;1&gt;&lt;31:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">arpTxSenderMac</arg><arg fmt="%s" index="2">( 4 downto 0 , 6 downto 0 )</arg> on block <arg fmt="%s" index="3">EthCore</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">arpTxSenderIp</arg><arg fmt="%s" index="2">( 3 downto 0 , 7 downto 0 )</arg> on block <arg fmt="%s" index="3">EthCore</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">ipProtocol</arg><arg fmt="%s" index="2">( 1 downto 0 , 4 downto 0 )</arg> on block <arg fmt="%s" index="3">EthCore</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">r_txData</arg><arg fmt="%s" index="2">( 14 downto 5 )</arg> on block <arg fmt="%s" index="3">Eth1000BaseXAutoNeg</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">macAddr</arg> on block <arg fmt="%s" index="2">Eth1000BaseXCore</arg> using the data <arg fmt="%s" index="3">macAddr&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipAddrs</arg> on block <arg fmt="%s" index="2">Eth1000BaseXCore</arg> using the data <arg fmt="%s" index="3">ipAddrs&lt;1&gt;&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">udpPorts</arg> on block <arg fmt="%s" index="2">Eth1000BaseXCore</arg> using the data <arg fmt="%s" index="3">udpPorts&lt;1&gt;&lt;15:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">userTxData</arg> on block <arg fmt="%s" index="2">Eth1000BaseXCore</arg> using the data <arg fmt="%s" index="3">userTxData&lt;1&gt;&lt;31:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">userRxData</arg> on block <arg fmt="%s" index="2">Eth1000BaseXCore</arg> using the data <arg fmt="%s" index="3">userRxData&lt;1&gt;&lt;31:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">anPhyTxData_data</arg><arg fmt="%s" index="2">( 15 downto 2 )</arg> on block <arg fmt="%s" index="3">Eth1000BaseXCore</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">macAddr</arg> on block <arg fmt="%s" index="2">S6EthTop</arg> using the data <arg fmt="%s" index="3">macAddr&lt;5&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">ipAddrs</arg> on block <arg fmt="%s" index="2">S6EthTop</arg> using the data <arg fmt="%s" index="3">ipAddrs&lt;1&gt;&lt;3&gt;&lt;7:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">udpPorts</arg> on block <arg fmt="%s" index="2">S6EthTop</arg> using the data <arg fmt="%s" index="3">udpPorts&lt;1&gt;&lt;15:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">userTxData</arg> on block <arg fmt="%s" index="2">S6EthTop</arg> using the data <arg fmt="%s" index="3">userTxData&lt;1&gt;&lt;31:0&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="303" delta="new" >Unable to preserve the ordering for port bus <arg fmt="%s" index="1">userRxData</arg> on block <arg fmt="%s" index="2">S6EthTop</arg> using the data <arg fmt="%s" index="3">userRxData&lt;1&gt;&lt;31:0&gt;</arg>.
+</msg>
+
+<msg type="info" file="NetListWriters" num="635" delta="new" >The generated VHDL netlist contains Xilinx <arg fmt="%s" index="1">SIMPRIM</arg> simulation primitives and has to be used with <arg fmt="%s" index="2">SIMPRIM</arg> library for correct compilation and simulation. 
+</msg>
+
+<msg type="info" file="NetListWriters" num="0" delta="new" >Xilinx recommends running separate simulations to check for setup by specifying the MAX field in the SDF file and for hold by specifying the MIN field in the SDF file. Please refer to Simulator documentation for more details on specifying MIN and MAX field in the SDF.
+</msg>
+
+<msg type="info" file="NetListWriters" num="665" delta="new" >For more information on how to pass the SDF switches to the simulator, see your Simulator tool documentation.
+</msg>
+
+</messages>
+

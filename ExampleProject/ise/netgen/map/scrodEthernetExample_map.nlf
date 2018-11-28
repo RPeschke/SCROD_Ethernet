@@ -1,0 +1,278 @@
+Release 14.7 - netgen P.20160913 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -filter
+/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/ise/iseconfig/fi
+lter.filter -intstyle ise -s 3 -pcf scrodEthernetExample.pcf -rpw 100 -tpw 0 -ar
+Structure -tm scrodEthernetExample -w -dir netgen/map -ofmt vhdl -sim
+scrodEthernetExample_map.ncd scrodEthernetExample_map.vhd  
+
+Read and Annotate design 'scrodEthernetExample_map.ncd' ...
+Loading device for application Rf_Device from file '6slx150t.nph' in environment
+/opt/Xilinx/14.7/ISE_DS/ISE/.
+   "scrodEthernetExample" is an NCD, version 3.2, device xc6slx150t, package
+fgg676, speed -3
+Loading constraints from 'scrodEthernetExample.pcf'...
+The speed grade (-3) differs from the speed grade specified in the .ncd file
+(-3).
+WARNING:Anno:67 - NCD is not completely routed, some delays may be inaccurate.
+The number of routable networks is 6935
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+
+WARNING:NetListWriters:306 - Signal bus Mcount_r_eventNum_cy( 27 downto 3 ) on block TpGenTx is not reconstructed, because there are some
+   missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus Msub__n0093_cy( 27 downto 3 ) on block TpGenTx is not reconstructed, because there are some missing
+   bus signals.
+
+WARNING:NetListWriters:306 - Signal bus Mcount_r_count_cy( 23 downto 3 ) on block InitRst is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipAddr on block UdpBufferRx_INST_1 using the data ipAddr<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipSrcAddr on block UdpBufferRx_INST_1 using the data
+   ipSrcAddr<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipDstAddr on block UdpBufferRx_INST_1 using the data
+   ipDstAddr<3><7:0>.
+
+WARNING:NetListWriters:306 - Signal bus r_myIpAddr_2( 7 downto 3 ) on block UdpBufferRx_INST_1 is not reconstructed, because there are some
+   missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_myUdpPort( 10 downto 0 ) on block UdpBufferRx_INST_1 is not reconstructed, because there are some
+   missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_myIpAddr_0( 5 downto 0 ) on block UdpBufferRx_INST_1 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipAddr on block UdpBufferRx using the data ipAddr<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipSrcAddr on block UdpBufferRx using the data ipSrcAddr<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipDstAddr on block UdpBufferRx using the data ipDstAddr<3><7:0>.
+
+WARNING:NetListWriters:306 - Signal bus NlwRenamedSig_OI_r_udpDstPort( 15 downto 0 ) on block UdpBufferRx is not reconstructed, because
+   there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_myIpAddr_0( 4 downto 2 ) on block UdpBufferRx is not reconstructed, because there are some missing
+   bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_myIpAddr_2( 7 downto 3 ) on block UdpBufferRx is not reconstructed, because there are some missing
+   bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_myUdpPort( 10 downto 4 ) on block UdpBufferRx is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipSrcAddr on block IPv4Rx using the data ipSrcAddr<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipDstAddr on block IPv4Rx using the data ipDstAddr<3><7:0>.
+
+WARNING:NetListWriters:306 - Signal bus ADDERTREE_INTERNAL_Madd1_cy( 15 downto 3 ) on block IPv4Rx is not reconstructed, because there are
+   some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus Madd_GND_138_o_BUS_0023_add_132_OUT_cy( 11 downto 3 ) on block IPv4Rx is not reconstructed, because
+   there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus Mcount_r_ipPacketId_cy( 11 downto 3 ) on block UdpTxFragmenter_2 is not reconstructed, because there
+   are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus Madd_n0152_cy( 15 downto 6 ) on block UdpTxFragmenter_2 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipSrcAddr on block UdpBufferTx_INST_1 using the data
+   ipSrcAddr<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipDstAddr on block UdpBufferTx_INST_1 using the data
+   ipDstAddr<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipSrcAddr on block UdpBufferTx using the data ipSrcAddr<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipDstAddr on block UdpBufferTx using the data ipDstAddr<3><7:0>.
+
+WARNING:NetListWriters:306 - Signal bus Mcount_r_ipPacketId_cy( 11 downto 3 ) on block UdpTxFragmenter_1 is not reconstructed, because there
+   are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus Madd_n0152_cy( 15 downto 6 ) on block UdpTxFragmenter_1 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipSrcAddr on block IPv4Tx_INST_1 using the data ipSrcAddr<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipDstAddr on block IPv4Tx_INST_1 using the data ipDstAddr<3><7:0>.
+
+WARNING:NetListWriters:306 - Signal bus Mmux__n0639_A_rs_A( 18 downto 1 ) on block IPv4Tx_INST_1 is not reconstructed, because there are
+   some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_header0( 24 downto 0 ) on block IPv4Tx_INST_1 is not reconstructed, because there are some missing
+   bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_header1( 31 downto 0 ) on block IPv4Tx_INST_1 is not reconstructed, because there are some missing
+   bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_header2Checksum( 4 downto 0 ) on block IPv4Tx_INST_1 is not reconstructed, because there are some
+   missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_header3( 31 downto 0 ) on block IPv4Tx_INST_1 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipSrcAddr on block IPv4Tx using the data ipSrcAddr<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipDstAddr on block IPv4Tx using the data ipDstAddr<3><7:0>.
+
+WARNING:NetListWriters:306 - Signal bus r_header0( 24 downto 0 ) on block IPv4Tx is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus r_header1( 31 downto 0 ) on block IPv4Tx is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus r_header3( 31 downto 2 ) on block IPv4Tx is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus Mmux__n0639_A_rs_A( 18 downto 1 ) on block IPv4Tx is not reconstructed, because there are some
+   missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_header2Checksum( 4 downto 0 ) on block IPv4Tx is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus multIpTxDataIn on block IpV4Arbiter using the data
+   multIpTxDataIn<1><7:0>.
+
+WARNING:NetListWriters:306 - Signal bus U_FifoDist8x16/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg(
+   2 downto 0 ) on block IpV4Arbiter is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus macAddress on block ArpResponder using the data
+   macAddress<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipAddresses on block ArpResponder using the data
+   ipAddresses<1><3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpRxSenderMac on block ArpResponder using the data
+   arpRxSenderMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpRxSenderIp on block ArpResponder using the data
+   arpRxSenderIp<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpRxTargetMac on block ArpResponder using the data
+   arpRxTargetMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpRxTargetIp on block ArpResponder using the data
+   arpRxTargetIp<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpTxSenderMac on block ArpResponder using the data
+   arpTxSenderMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpTxSenderIp on block ArpResponder using the data
+   arpTxSenderIp<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpTxTargetMac on block ArpResponder using the data
+   arpTxTargetMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpTxTargetIp on block ArpResponder using the data
+   arpTxTargetIp<3><7:0>.
+
+WARNING:NetListWriters:306 - Signal bus NlwRenamedSignal_r_txSenderIp_0( 2 downto 0 ) on block ArpResponder is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ethTxDestMac on block EthFrameTx using the data
+   ethTxDestMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ethTxSrcMac on block EthFrameTx using the data
+   ethTxSrcMac<5><7:0>.
+
+WARNING:NetListWriters:306 - Signal bus r_ethTxEtherType( 11 downto 1 ) on block EthFrameTx is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpSenderMac on block ArpPacketTx using the data
+   arpSenderMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpSenderIp on block ArpPacketTx using the data
+   arpSenderIp<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpTargetMac on block ArpPacketTx using the data
+   arpTargetMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpTargetIp on block ArpPacketTx using the data
+   arpTargetIp<3><7:0>.
+
+WARNING:NetListWriters:306 - Signal bus r_senderMac_3( 6 downto 1 ) on block ArpPacketTx is not reconstructed, because there are some
+   missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_senderIp_0( 5 downto 0 ) on block ArpPacketTx is not reconstructed, because there are some missing
+   bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_senderMac_4( 6 downto 2 ) on block ArpPacketTx is not reconstructed, because there are some
+   missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_senderIp_2( 7 downto 3 ) on block ArpPacketTx is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus macAddr on block EthTx using the data macAddr<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpTxSenderMac on block EthTx using the data
+   arpTxSenderMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpTxSenderIp on block EthTx using the data arpTxSenderIp<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpTxTargetMac on block EthTx using the data
+   arpTxTargetMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpTxTargetIp on block EthTx using the data arpTxTargetIp<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipTxDestMac on block EthTx using the data ipTxDestMac<5><7:0>.
+
+WARNING:NetListWriters:306 - Signal bus ethTxEtherType( 11 downto 1 ) on block EthTx is not reconstructed, because there are some missing
+   bus signals.
+
+WARNING:NetListWriters:306 - Signal bus _n0092_inv_wg_cy( 7 downto 3 ) on block EthTx is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ethRxSrcMac on block ArpPacketRx using the data
+   ethRxSrcMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ethRxDestMac on block ArpPacketRx using the data
+   ethRxDestMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpSenderMac on block ArpPacketRx using the data
+   arpSenderMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpSenderIp on block ArpPacketRx using the data
+   arpSenderIp<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpTargetMac on block ArpPacketRx using the data
+   arpTargetMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpTargetIp on block ArpPacketRx using the data
+   arpTargetIp<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus macAddress on block EthFrameRx using the data macAddress<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ethRxSrcMac on block EthFrameRx using the data
+   ethRxSrcMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ethRxDestMac on block EthFrameRx using the data
+   ethRxDestMac<5><7:0>.
+
+WARNING:NetListWriters:306 - Signal bus Mcount_r_payloadCount_cy( 7 downto 3 ) on block EthFrameRx is not reconstructed, because there are
+   some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus Msub_n0455_cy( 7 downto 3 ) on block EthFrameRx is not reconstructed, because there are some missing
+   bus signals.
+
+WARNING:NetListWriters:306 - Signal bus Mmux_GND_126_o_GND_126_o_mux_144_OUT_rs_cy( 7 downto 3 ) on block EthFrameRx is not reconstructed,
+   because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus Mcount_r_wrAddr_cy( 7 downto 3 ) on block EthFrameRx is not reconstructed, because there are some
+   missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus Mmux_GND_126_o_GND_126_o_mux_144_OUT_rs_A( 2 downto 0 ) on block EthFrameRx is not reconstructed,
+   because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus Mcount_r_byteCount_cy( 11 downto 3 ) on block Eth1000BaseXMacRx is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus macAddr on block EthRx using the data macAddr<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpRxSenderMac on block EthRx using the data
+   arpRxSenderMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpRxSenderIp on block EthRx using the data arpRxSenderIp<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpRxTargetMac on block EthRx using the data
+   arpRxTargetMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus arpRxTargetIp on block EthRx using the data arpRxTargetIp<3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ethRxSenderMac on block EthRx using the data
+   ethRxSenderMac<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus macAddr on block EthCore using the data macAddr<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipAddrs on block EthCore using the data ipAddrs<1><3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus udpPorts on block EthCore using the data udpPorts<1><15:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus userTxData on block EthCore using the data userTxData<1><31:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus userRxData on block EthCore using the data userRxData<1><31:0>.
+
+WARNING:NetListWriters:306 - Signal bus arpTxSenderMac( 4 downto 0 , 6 downto 0 ) on block EthCore is not reconstructed, because there are
+   some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus arpTxSenderIp( 3 downto 0 , 7 downto 0 ) on block EthCore is not reconstructed, because there are
+   some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus ipProtocol( 1 downto 0 , 4 downto 0 ) on block EthCore is not reconstructed, because there are some
+   missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus r_txData( 14 downto 5 ) on block Eth1000BaseXAutoNeg is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus macAddr on block Eth1000BaseXCore using the data macAddr<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipAddrs on block Eth1000BaseXCore using the data
+   ipAddrs<1><3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus udpPorts on block Eth1000BaseXCore using the data
+   udpPorts<1><15:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus userTxData on block Eth1000BaseXCore using the data
+   userTxData<1><31:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus userRxData on block Eth1000BaseXCore using the data
+   userRxData<1><31:0>.
+
+WARNING:NetListWriters:306 - Signal bus anPhyTxData_data( 15 downto 2 ) on block Eth1000BaseXCore is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus macAddr on block S6EthTop using the data macAddr<5><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus ipAddrs on block S6EthTop using the data ipAddrs<1><3><7:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus udpPorts on block S6EthTop using the data udpPorts<1><15:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus userTxData on block S6EthTop using the data userTxData<1><31:0>.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus userRxData on block S6EthTop using the data userRxData<1><31:0>.
+Writing VHDL netlist '/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/ise/netgen/map/scrodEthernetExample_map.vhd' ...
+Writing VHDL SDF file '/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/ise/netgen/map/scrodEthernetExample_map.sdf' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx SIMPRIM simulation primitives and has to be used with SIMPRIM library
+   for correct compilation and simulation. 
+INFO:NetListWriters - Xilinx recommends running separate simulations to check for setup by specifying the MAX field in the SDF file and for
+   hold by specifying the MIN field in the SDF file. Please refer to Simulator documentation for more details on specifying MIN and MAX
+   field in the SDF.
+INFO:NetListWriters:665 - For more information on how to pass the SDF switches to the simulator, see your Simulator tool documentation.
+Number of warnings: 116
+Number of info messages: 3
+Total memory usage is 742060 kilobytes

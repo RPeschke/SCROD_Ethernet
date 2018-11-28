@@ -205,6 +205,8 @@ Parsing architecture <RTL> of entity <gtps6tile>.
 Parsing VHDL file "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/SyncBit.vhd" into library work
 Parsing entity <SyncBit>.
 Parsing architecture <rtl> of entity <syncbit>.
+Parsing VHDL file "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/axiStreamHelper.vhd" into library work
+Parsing package <axiStreamHelper>.
 Parsing VHDL file "/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/EthCore.vhd" into library work
 Parsing entity <EthCore>.
 Parsing architecture <Behavioral> of entity <ethcore>.
@@ -227,15 +229,18 @@ WARNING:HDLCompiler:946 - "/home/ise/Documents/Firmware/t/firmware-ethernet/Exam
 Parsing VHDL file "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/InitRst.vhd" into library work
 Parsing entity <InitRst>.
 Parsing architecture <rtl> of entity <initrst>.
+Parsing VHDL file "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/axiDWORDBi.vhd" into library work
+Parsing package <axiDWORDbi_p>.
+Parsing package body <axiDWORDbi_p>.
 Parsing VHDL file "/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXCore.vhd" into library work
 Parsing entity <Eth1000BaseXCore>.
 Parsing architecture <Behavioral> of entity <eth1000basexcore>.
 Parsing VHDL file "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/TpGenTx.vhd" into library work
 Parsing entity <TpGenTx>.
 Parsing architecture <Behavioral> of entity <tpgentx>.
-Parsing VHDL file "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" into library work
-Parsing entity <CommandInterpreter>.
-Parsing architecture <rtl> of entity <commandinterpreter>.
+Parsing VHDL file "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/Axi_Commandreceiver.vhd" into library work
+Parsing entity <Axi_CommandInterpreter>.
+Parsing architecture <rtl> of entity <axi_commandinterpreter>.
 Parsing VHDL file "/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/S6/rtl/S6EthTop.vhd" into library work
 Parsing entity <S6EthTop>.
 Parsing architecture <Behavioral> of entity <s6ethtop>.
@@ -382,9 +387,12 @@ WARNING:HDLCompiler:92 - "/home/ise/Documents/Firmware/t/firmware-ethernet/Examp
 WARNING:HDLCompiler:92 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/TpGenTx.vhd" Line 134: waitcycles should be on the sensitivity list of the process
 INFO:HDLCompiler:679 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/TpGenTx.vhd" Line 144. Case statement is complete. others clause is never selected
 
-Elaborating entity <CommandInterpreter> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" Line 158: Assignment to statenum ignored, since the identifier is never used
-INFO:HDLCompiler:679 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" Line 501. Case statement is complete. others clause is never selected
+Elaborating entity <Axi_CommandInterpreter> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:1127 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/projectSrc/scrodEthernetExample.vhd" Line 218: Assignment to regack ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/projectSrc/scrodEthernetExample.vhd" Line 92: Net <regAddr[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/projectSrc/scrodEthernetExample.vhd" Line 93: Net <regWrData[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/projectSrc/scrodEthernetExample.vhd" Line 95: Net <regReq> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/projectSrc/scrodEthernetExample.vhd" Line 96: Net <regOp> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -400,15 +408,15 @@ INFO:Xst:3210 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject
 INFO:Xst:3210 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/projectSrc/scrodEthernetExample.vhd" line 115: Output port <ethUsrClk62> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/projectSrc/scrodEthernetExample.vhd" line 115: Output port <ethSync> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/projectSrc/scrodEthernetExample.vhd" line 115: Output port <ethReady> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
-    Found 16-bit register for signal <regRdData>.
+WARNING:Xst:653 - Signal <regAddr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <regWrData> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <regReq> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <regOp> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 16-bit register for signal <numWords>.
     Found 16-bit register for signal <waitCyclesHigh>.
     Found 16-bit register for signal <waitCyclesLow>.
-    Found 1-bit register for signal <regAck>.
-    Found 16-bit 4-to-1 multiplexer for signal <_n0073> created at line 237.
     Summary:
-	inferred  65 D-type flip-flop(s).
-	inferred   1 Multiplexer(s).
+	inferred  48 D-type flip-flop(s).
 Unit <scrodEthernetExample> synthesized.
 
 Synthesizing Unit <S6EthTop>.
@@ -655,7 +663,7 @@ Synthesizing Unit <EthFrameTx>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 5-bit subtractor for signal <GND_121_o_GND_121_o_sub_32_OUT> created at line 134.
-    Found 8-bit adder for signal <n0208> created at line 43.
+    Found 8-bit adder for signal <n0208> created at line 61.
     Found 4-bit adder for signal <r_byteCounter[3]_GND_121_o_add_38_OUT> created at line 137.
     Found 3-bit subtractor for signal <GND_121_o_GND_121_o_sub_24_OUT<2:0>> created at line 124.
     Found 8-bit 6-to-1 multiplexer for signal <GND_121_o_X_23_o_wide_mux_16_OUT> created at line 113.
@@ -708,7 +716,7 @@ Synthesizing Unit <ArpPacketTx>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 4-bit subtractor for signal <GND_122_o_GND_122_o_sub_49_OUT> created at line 149.
-    Found 7-bit adder for signal <n0288> created at line 43.
+    Found 7-bit adder for signal <n0288> created at line 61.
     Found 3-bit adder for signal <r_wrCount[2]_GND_122_o_add_88_OUT> created at line 195.
     Found 3-bit subtractor for signal <GND_122_o_GND_122_o_sub_78_OUT<2:0>> created at line 179.
     Found 2-bit subtractor for signal <GND_122_o_GND_122_o_sub_86_OUT<1:0>> created at line 189.
@@ -913,7 +921,7 @@ WARNING:Xst:647 - Input <ethRxDestMac<0>> is never used. This port will be prese
     -----------------------------------------------------------------------
     Found 4-bit subtractor for signal <GND_128_o_GND_128_o_sub_7_OUT> created at line 118.
     Found 4-bit subtractor for signal <GND_128_o_GND_128_o_sub_28_OUT> created at line 146.
-    Found 7-bit adder for signal <n0328> created at line 43.
+    Found 7-bit adder for signal <n0328> created at line 61.
     Found 3-bit adder for signal <r_rdCount[2]_GND_128_o_add_109_OUT> created at line 183.
     Found 5-bit subtractor for signal <GND_128_o_GND_128_o_sub_29_OUT<4:0>> created at line 146.
     Found 3-bit subtractor for signal <GND_128_o_GND_128_o_sub_48_OUT<2:0>> created at line 155.
@@ -1047,8 +1055,8 @@ Synthesizing Unit <IPv4Tx>.
     Found 32-bit adder for signal <n0427> created at line 167.
     Found 32-bit adder for signal <r_ipCheckSum32[31]_r_header4Checksum[31]_add_22_OUT> created at line 167.
     Found 16-bit adder for signal <r_ipCheckSum32[15]_r_ipCheckSum32[31]_add_23_OUT> created at line 171.
-    Found 6-bit adder for signal <n0382> created at line 43.
-    Found 6-bit adder for signal <n0393> created at line 43.
+    Found 6-bit adder for signal <n0382> created at line 61.
+    Found 6-bit adder for signal <n0393> created at line 61.
     Found 2-bit subtractor for signal <_n0446> created at line 233.
     Found 14-bit subtractor for signal <GND_132_o_GND_132_o_sub_152_OUT<13:0>> created at line 239.
     Found 14-bit subtractor for signal <GND_132_o_GND_132_o_sub_7_OUT<13:0>> created at line 154.
@@ -1526,7 +1534,7 @@ Synthesizing Unit <TpGenTx>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 32-bit adder for signal <r_eventNum[31]_GND_261_o_add_15_OUT> created at line 141.
-    Found 32-bit subtractor for signal <_n0090> created at line 124.
+    Found 32-bit subtractor for signal <_n0093> created at line 124.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  98 D-type flip-flop(s).
@@ -1534,79 +1542,36 @@ Synthesizing Unit <TpGenTx>.
 	inferred   1 Finite State Machine(s).
 Unit <TpGenTx> synthesized.
 
-Synthesizing Unit <CommandInterpreter>.
-    Related source file is "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd".
-        REG_ADDR_BITS_G = 16
-        REG_DATA_BITS_G = 16
-        TIMEOUT_G = 125000
-    Found 16-bit register for signal <r_regAddr>.
-    Found 16-bit register for signal <r_regWrData>.
-    Found 16-bit register for signal <r_regRdData>.
-    Found 1-bit register for signal <r_regReq>.
-    Found 1-bit register for signal <r_regOp>.
-    Found 32-bit register for signal <r_txData>.
-    Found 1-bit register for signal <r_txDataValid>.
-    Found 1-bit register for signal <r_txDataLast>.
-    Found 32-bit register for signal <r_wordsLeft>.
-    Found 8-bit register for signal <r_wordOutCnt>.
-    Found 32-bit register for signal <r_checksum>.
-    Found 32-bit register for signal <r_command>.
-    Found 24-bit register for signal <r_commandId>.
-    Found 1-bit register for signal <r_noResponse>.
-    Found 32-bit register for signal <r_errFlags>.
-    Found 32-bit register for signal <r_timeoutCnt>.
-    Found 5-bit register for signal <r_state>.
-    Found finite state machine <FSM_20> for signal <r_state>.
-    -----------------------------------------------------------------------
-    | States             | 18                                             |
-    | Transitions        | 62                                             |
-    | Inputs             | 20                                             |
-    | Outputs            | 7                                              |
-    | Clock              | usrClk (rising_edge)                           |
-    | Reset              | usrRst (positive)                              |
-    | Reset type         | synchronous                                    |
-    | Reset State        | idle_s                                         |
-    | Power Up State     | idle_s                                         |
-    | Encoding           | auto                                           |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_43_OUT> created at line 225.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_45_OUT> created at line 228.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_54_OUT> created at line 243.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_56_OUT> created at line 247.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_65_OUT> created at line 262.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_68_OUT> created at line 267.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_77_OUT> created at line 288.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_87_OUT> created at line 305.
-    Found 32-bit adder for signal <r_checksum[31]_rxData[31]_add_103_OUT> created at line 322.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_105_OUT> created at line 329.
-    Found 32-bit adder for signal <r_errFlags[31]_PWR_127_o_add_115_OUT> created at line 344.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_117_OUT> created at line 348.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_121_OUT> created at line 359.
-    Found 32-bit adder for signal <r_timeoutCnt[31]_GND_278_o_add_148_OUT> created at line 393.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_278_o_add_152_OUT> created at line 403.
-    Found 32-bit adder for signal <r_checksum[31]_GND_278_o_add_170_OUT> created at line 424.
-    Found 32-bit adder for signal <r_checksum[31]_GND_278_o_add_190_OUT> created at line 446.
-    Found 32-bit adder for signal <r_checksum[31]_GND_278_o_add_209_OUT> created at line 466.
-    Found 32-bit adder for signal <r_checksum[31]_r_txData[31]_add_213_OUT> created at line 471.
-    Found 8-bit adder for signal <r_wordOutCnt[7]_GND_278_o_add_214_OUT> created at line 472.
-    Found 32-bit subtractor for signal <GND_278_o_GND_278_o_sub_115_OUT<31:0>> created at line 340.
-    Found 32-bit 7-to-1 multiplexer for signal <_n0538> created at line 475.
-    Found 32-bit comparator greater for signal <GND_278_o_rxData[31]_LessThan_45_o> created at line 227
-    Found 32-bit comparator equal for signal <n0072> created at line 347
+Synthesizing Unit <Axi_CommandInterpreter>.
+    Related source file is "/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/Axi_Commandreceiver.vhd".
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <Bufer1>, simulation mismatch.
+    Found 11x32-bit dual-port RAM <Mram_Bufer1> for signal <Bufer1>.
+    Found 32-bit register for signal <seq.Index>.
+    Found 2-bit register for signal <state>.
+    Found 32-bit register for signal <seq.Max_Index>.
+    Found 1-bit register for signal <rxDataReady>.
+    Found 32-bit register for signal <txData>.
+    Found 1-bit register for signal <txDataValid>.
+    Found 1-bit register for signal <txDataLast>.
+    Found 32-bit adder for signal <seq.Index[31]_GND_280_o_add_2_OUT> created at line 60.
+    Found 32-bit adder for signal <seq.Index[31]_GND_280_o_add_11_OUT> created at line 77.
+    Found 32-bit comparator equal for signal <seq.Max_Index[31]_seq.Index[31]_equal_13_o> created at line 78
+    Found 4-bit comparator equal for signal <_n0092> created at line 59
     Summary:
-	inferred  21 Adder/Subtractor(s).
-	inferred 277 D-type flip-flop(s).
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 101 D-type flip-flop(s).
 	inferred   2 Comparator(s).
-	inferred  51 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
-Unit <CommandInterpreter> synthesized.
+	inferred   6 Multiplexer(s).
+Unit <Axi_CommandInterpreter> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 113
+# RAMs                                                 : 1
+ 11x32-bit dual-port RAM                               : 1
+# Adders/Subtractors                                   : 94
  12-bit adder                                          : 4
  12-bit subtractor                                     : 2
  13-bit adder                                          : 2
@@ -1623,31 +1588,30 @@ Macro Statistics
  20-bit adder                                          : 1
  3-bit adder                                           : 6
  3-bit subtractor                                      : 4
- 32-bit adder                                          : 25
- 32-bit subtractor                                     : 2
+ 32-bit adder                                          : 8
+ 32-bit subtractor                                     : 1
  4-bit adder                                           : 2
  4-bit subtractor                                      : 4
  5-bit subtractor                                      : 3
  6-bit adder                                           : 4
  6-bit subtractor                                      : 2
  7-bit adder                                           : 2
- 8-bit adder                                           : 3
+ 8-bit adder                                           : 2
  8-bit subtractor                                      : 1
-# Registers                                            : 382
- 1-bit register                                        : 85
+# Registers                                            : 371
+ 1-bit register                                        : 82
  12-bit register                                       : 5
  13-bit register                                       : 3
  14-bit register                                       : 2
- 16-bit register                                       : 51
+ 16-bit register                                       : 47
  18-bit register                                       : 1
- 2-bit register                                        : 29
+ 2-bit register                                        : 30
  20-bit register                                       : 1
- 24-bit register                                       : 1
  3-bit register                                        : 7
- 32-bit register                                       : 44
+ 32-bit register                                       : 41
  4-bit register                                        : 3
  5-bit register                                        : 1
- 8-bit register                                        : 149
+ 8-bit register                                        : 148
 # Comparators                                          : 30
  14-bit comparator not equal                           : 1
  16-bit comparator greater                             : 2
@@ -1658,30 +1622,28 @@ Macro Statistics
  3-bit comparator lessequal                            : 3
  3-bit comparator not equal                            : 1
  32-bit comparator equal                               : 1
- 32-bit comparator greater                             : 1
+ 4-bit comparator equal                                : 1
  4-bit comparator greater                              : 2
  8-bit comparator equal                                : 9
-# Multiplexers                                         : 365
- 1-bit 2-to-1 multiplexer                              : 147
+# Multiplexers                                         : 319
+ 1-bit 2-to-1 multiplexer                              : 140
  1-bit 3-to-1 multiplexer                              : 2
  1-bit 4-to-1 multiplexer                              : 2
  12-bit 2-to-1 multiplexer                             : 15
  13-bit 2-to-1 multiplexer                             : 2
  14-bit 2-to-1 multiplexer                             : 4
  16-bit 2-to-1 multiplexer                             : 24
- 16-bit 4-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 11
  20-bit 2-to-1 multiplexer                             : 6
  3-bit 2-to-1 multiplexer                              : 24
- 32-bit 2-to-1 multiplexer                             : 69
+ 32-bit 2-to-1 multiplexer                             : 33
  32-bit 4-to-1 multiplexer                             : 2
- 32-bit 7-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 8
- 8-bit 2-to-1 multiplexer                              : 39
+ 8-bit 2-to-1 multiplexer                              : 38
  8-bit 3-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 3
  8-bit 6-to-1 multiplexer                              : 4
-# FSMs                                                 : 24
+# FSMs                                                 : 23
 # Xors                                                 : 129
  1-bit xor2                                            : 75
  1-bit xor3                                            : 26
@@ -1728,241 +1690,303 @@ INFO:Xst:2261 - The FF/Latch <r_header1_14> in Unit <G_UdpTxInstance[0].U_IPv4Tx
    <r_header4Checksum_21> <r_header4Checksum_22> <r_header4Checksum_23> <r_header4Checksum_24> <r_header4Checksum_25> <r_header4Checksum_26> <r_header4Checksum_27> <r_header4Checksum_28> <r_header4Checksum_29> <r_header4Checksum_30> <r_header4Checksum_31> 
 INFO:Xst:2261 - The FF/Latch <r_ipProtocol_1> in Unit <G_UdpTxInstance[0].U_UdpTxFragmenter> is equivalent to the following 5 FFs/Latches, which will be removed : <r_ipProtocol_2> <r_ipProtocol_3> <r_ipProtocol_5> <r_ipProtocol_6> <r_ipProtocol_7> 
 INFO:Xst:2261 - The FF/Latch <r_ipProtocol_0> in Unit <G_UdpTxInstance[0].U_UdpTxFragmenter> is equivalent to the following FF/Latch, which will be removed : <r_ipProtocol_4> 
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_1> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_2> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_3> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_5> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_6> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_7> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ipProtocol_1> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpTxFragmenter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ipDataValid> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpTxFragmenter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpReq> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_0> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_1> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_2> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_3> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_5> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_11> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_12> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_13> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_14> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_15> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_1> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_2> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_3> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_4> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_5> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_6> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_7> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_0> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_1> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_12> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_13> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_14> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_15> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header1_14> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_0> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_1> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_3> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_5> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_6> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_7> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_9> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_10> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_11> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_12> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_13> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_14> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_15> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_16> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_17> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_18> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_20> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_22> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_24> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_25> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_26> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_27> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_28> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_29> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_6> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_7> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_0> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_1> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_2> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_3> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_4> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_5> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_0> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_1> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_2> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_4> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_6> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_0> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_1> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_3> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_5> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_6> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_7> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_0> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_1> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_2> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_3> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_5> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_11> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_12> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_13> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_14> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_15> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_2> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_3> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_4> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_5> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_0> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_1> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_2> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_4> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_6> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_1> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_2> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_3> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_4> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_6> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_7> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_1> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_2> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_3> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myUdpPort_5> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_11> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_12> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_13> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_14> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myUdpPort_15> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_1> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_2> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_3> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_4> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_3> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_2> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_1> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_7> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_6> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_4> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_3> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_2> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_1> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_6> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_4> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_2> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_1> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_0> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_5> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_4> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_4> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_3> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_2> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_1> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_0> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_7> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_6> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_5> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_2_0> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_2_1> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_2_2> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_2_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_2_4> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_2_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_2_6> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_2_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_1_2> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_1_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_1_4> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_1_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_1_6> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_1_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_0> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_2> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_4> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_6> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_8> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_4> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_3> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_2> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_1> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_15> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_14> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_13> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_12> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_11> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_2> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_1> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_0> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpReq> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ipDataValid> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpTxFragmenter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ipProtocol_1> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpTxFragmenter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_7> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_6> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_5> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_3> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_2> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_1> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_29> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_28> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_27> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_26> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_25> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_3> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_2> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_1> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_0> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_7> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_6> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_5> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_4> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_3> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_2> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_1_1> has a constant value of 0 in block <G_Rx[1].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_15> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_14> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_13> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_12> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_11> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_5> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_3> has a constant value of 0 in block <G_UdpTxInstance[0].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_13> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_12> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_11> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_10> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_9> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_8> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_7> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_6> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_5> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_4> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_3> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_2> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_1> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_0> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_15> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_14> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_13> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_15> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_14> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_13> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_12> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_11> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_10> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_9> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_8> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_7> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_6> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_5> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_4> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_3> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_2> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_1> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_0> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_15> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_14> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_5> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_3> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_2> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_1> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_0> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_7> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_6> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_5> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_3> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_1> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_0_0> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_6> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_4> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_2> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_1> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_2_0> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myIpAddr_3_5> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_12> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_11> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_10> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_9> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_8> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_7> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_6> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_5> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_4> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_3> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_2> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_1> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_0> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_15> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_14> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_13> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_12> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_myUdpPort_11> has a constant value of 0 in block <G_Rx[0].U_UdpBufferRx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_op_9> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_10> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_11> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_12> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_13> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_14> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_txData_0> has a constant value of 0 in block <U_AutoNeg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_byteWidth_0> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_byteWidth_1> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_byteWidth_2> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_3_0> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_3_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_3_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_3_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_5_0> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_5_1> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_5_2> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_5_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_5_4> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_5_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_5_6> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_5_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_4_0> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_4_1> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_4_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_4_4> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_4_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_4_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_0_1> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_0_2> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_0_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_0_4> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_0_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_0_6> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_senderMac_0_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_12> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_13> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_14> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_15> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_16> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_17> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_18> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_20> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_22> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_24> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_25> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_26> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_27> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_28> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_29> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_1> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_2> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_3> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_5> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_6> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header2Checksum_7> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ipProtocol_1> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpTxFragmenter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ipDataValid> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpTxFragmenter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpReq> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_1> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_2> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_3> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_5> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_11> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_op_15> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_byteWidth_0> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_byteWidth_1> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_byteWidth_2> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_0> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_3> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_4> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_5> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_6> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_7> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_8> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_8> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_6> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_4> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_2> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_0> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_1_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_1_6> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_1_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_1_4> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_1_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_1_2> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_2_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_2_6> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_9> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_10> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_12> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_13> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_14> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_15> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_ethTxSrcMac_4_0> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_txSenderMac_3_0> has a constant value of 0 in block <U_ArpResponder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header1_14> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_1> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_2> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_3> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_4> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_6> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_7> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_9> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <r_header3_10> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_8> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_7> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_6> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_5> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_4> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_3> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_0> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_byteWidth_2> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_byteWidth_1> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_byteWidth_0> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_15> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_14> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_13> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_12> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_11> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_op_10> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_4_0> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_5_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_5_6> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_5_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_5_4> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_5_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_5_2> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_5_1> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_5_0> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_3_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_3_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_3_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_3_0> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_byteWidth_2> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_byteWidth_1> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_byteWidth_0> has a constant value of 0 in block <U_Crc32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_txData_0> has a constant value of 0 in block <U_AutoNeg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_2_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_2_4> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_2_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_2_2> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_2_1> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_2_0> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_0_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_0_6> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_0_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_0_4> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_0_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_0_2> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_0_1> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_4_7> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_4_5> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_4_4> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_4_3> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_senderMac_4_1> has a constant value of 0 in block <U_ArpPacketTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_0> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header1_14> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_15> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_14> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_13> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_12> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_11> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_5> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_3> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_2> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpSrcPort_1> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rEth_udpReq> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpBufferTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ipDataValid> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpTxFragmenter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ipProtocol_1> has a constant value of 0 in block <G_UdpTxInstance[1].U_UdpTxFragmenter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_7> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_6> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_5> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_24> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_22> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_20> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_18> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_17> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_16> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_15> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_14> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_13> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_12> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_11> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_10> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_9> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_7> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_6> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_5> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_3> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_1> has a constant value of 0 in block <G_UdpTxInstance[0].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_header3_11> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_10> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_9> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_7> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_6> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_4> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_3> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_2> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_1> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header1_14> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_txSenderMac_3_0> has a constant value of 0 in block <U_ArpResponder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxSrcMac_4_0> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_15> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_14> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_13> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_12> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_ethTxEtherType_10> has a constant value of 0 in block <U_EthFrameTx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_3> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_2> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header2Checksum_1> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_29> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_28> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_27> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_26> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_25> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_24> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_22> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_20> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_18> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_17> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_16> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_15> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_14> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_13> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_header3_12> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
 
-Synthesizing (advanced) Unit <CommandInterpreter>.
-The following registers are absorbed into counter <r_wordOutCnt>: 1 register on signal <r_wordOutCnt>.
-The following registers are absorbed into counter <r_timeoutCnt>: 1 register on signal <r_timeoutCnt>.
-Unit <CommandInterpreter> synthesized (advanced).
+Synthesizing (advanced) Unit <Axi_CommandInterpreter>.
+INFO:Xst:3231 - The small RAM <Mram_Bufer1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 32-bit                    |          |
+    |     clkA           | connected to signal <usrClk>        | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <seq.Index<3:0>> |          |
+    |     diA            | connected to signal <rxData>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 32-bit                    |          |
+    |     addrB          | connected to signal <n0086<3:0>>    |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Axi_CommandInterpreter> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Eth1000BaseXAbilityMatch>.
 The following registers are absorbed into counter <r_idleCount>: 1 register on signal <r_idleCount>.
@@ -2018,7 +2042,9 @@ Unit <UdpTxFragmenter_2> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 93
+# RAMs                                                 : 1
+ 11x32-bit dual-port distributed RAM                   : 1
+# Adders/Subtractors                                   : 76
  12-bit adder                                          : 2
  12-bit subtractor                                     : 2
  13-bit adder                                          : 2
@@ -2031,8 +2057,8 @@ Macro Statistics
  20-bit adder                                          : 1
  3-bit adder                                           : 5
  3-bit subtractor                                      : 4
- 32-bit adder                                          : 22
- 32-bit subtractor                                     : 2
+ 32-bit adder                                          : 6
+ 32-bit subtractor                                     : 1
  4-bit adder                                           : 1
  5-bit adder                                           : 3
  5-bit subtractor                                      : 2
@@ -2041,21 +2067,20 @@ Macro Statistics
  8-bit adder                                           : 1
 # Adder Trees                                          : 1
  19-bit / 4-inputs adder tree                          : 1
-# Counters                                             : 16
+# Counters                                             : 14
  12-bit up counter                                     : 2
  16-bit up counter                                     : 4
  2-bit down counter                                    : 1
  2-bit up counter                                      : 1
  2-bit updown counter                                  : 1
  3-bit up counter                                      : 1
- 32-bit up counter                                     : 3
+ 32-bit up counter                                     : 2
  4-bit up counter                                      : 1
  8-bit down counter                                    : 1
- 8-bit up counter                                      : 1
 # Accumulators                                         : 1
  4-bit down loadable accumulator                       : 1
-# Registers                                            : 3569
- Flip-Flops                                            : 3569
+# Registers                                            : 3416
+ Flip-Flops                                            : 3416
 # Comparators                                          : 30
  14-bit comparator not equal                           : 1
  16-bit comparator greater                             : 2
@@ -2066,13 +2091,13 @@ Macro Statistics
  3-bit comparator lessequal                            : 3
  3-bit comparator not equal                            : 1
  32-bit comparator equal                               : 1
- 32-bit comparator greater                             : 1
+ 4-bit comparator equal                                : 1
  4-bit comparator greater                              : 2
  8-bit comparator equal                                : 9
-# Multiplexers                                         : 539
- 1-bit 2-to-1 multiplexer                              : 326
+# Multiplexers                                         : 542
+ 1-bit 2-to-1 multiplexer                              : 383
  1-bit 3-to-1 multiplexer                              : 2
- 1-bit 4-to-1 multiplexer                              : 18
+ 1-bit 4-to-1 multiplexer                              : 2
  12-bit 2-to-1 multiplexer                             : 12
  13-bit 2-to-1 multiplexer                             : 2
  14-bit 2-to-1 multiplexer                             : 2
@@ -2080,15 +2105,14 @@ Macro Statistics
  2-bit 2-to-1 multiplexer                              : 9
  20-bit 2-to-1 multiplexer                             : 6
  3-bit 2-to-1 multiplexer                              : 23
- 32-bit 2-to-1 multiplexer                             : 65
+ 32-bit 2-to-1 multiplexer                             : 28
  32-bit 4-to-1 multiplexer                             : 2
- 32-bit 7-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 6
  8-bit 2-to-1 multiplexer                              : 37
  8-bit 3-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 3
  8-bit 6-to-1 multiplexer                              : 4
-# FSMs                                                 : 24
+# FSMs                                                 : 23
 # Xors                                                 : 129
  1-bit xor2                                            : 75
  1-bit xor3                                            : 26
@@ -2289,6 +2313,54 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_ipProtocol_5> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_ipProtocol_6> has a constant value of 0 in block <UdpTxFragmenter_2>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_ipProtocol_7> has a constant value of 0 in block <UdpTxFragmenter_2>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_ipDataValid> (without init value) has a constant value of 0 in block <UdpTxFragmenter_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_8> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_9> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_10> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_11> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_12> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_13> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_14> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_15> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_0> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_1> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_2> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_3> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_4> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_5> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_6> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_7> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_8> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_9> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_10> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_11> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_12> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_13> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_14> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <numWords_15> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_0> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_1> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_2> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_3> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_4> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_5> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_6> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_7> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_8> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_9> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_10> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_11> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_12> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_13> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_14> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesLow_15> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_0> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_1> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_2> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_3> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_4> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_5> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_6> has a constant value of 1 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <waitCyclesHigh_7> has a constant value of 0 in block <scrodEthernetExample>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <r_ethTxSrcMac_4_2> in Unit <EthFrameTx> is equivalent to the following 8 FFs/Latches, which will be removed : <r_ethTxSrcMac_4_6> <r_ethTxSrcMac_3_1> <r_ethTxSrcMac_3_2> <r_ethTxSrcMac_3_4> <r_ethTxSrcMac_3_6> <r_ethTxSrcMac_1_0> <r_ethTxSrcMac_1_1> <r_ethTxSrcMac_0_0> 
 INFO:Xst:2261 - The FF/Latch <r_txSenderMac_3_1> in Unit <ArpResponder> is equivalent to the following 9 FFs/Latches, which will be removed : <r_txSenderMac_3_2> <r_txSenderMac_3_4> <r_txSenderMac_3_6> <r_txSenderMac_4_2> <r_txSenderMac_4_6> <r_txSenderMac_1_0> <r_txSenderMac_1_1> <r_txSenderMac_0_0> <r_txOp_1> 
 INFO:Xst:2261 - The FF/Latch <r_header0_24> in Unit <IPv4Tx> is equivalent to the following 3 FFs/Latches, which will be removed : <r_header0_26> <r_header0_30> <r_header2Checksum_9> 
@@ -2534,30 +2606,6 @@ Optimizing FSM <U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/FSM_15> on signal <r_st
  low_s  | 10
 --------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <U_CommandInterpreter/FSM_20> on signal <r_state[1:5]> with user encoding.
---------------------------------
- State              | Encoding
---------------------------------
- idle_s             | 00000
- packet_size_s      | 00001
- packet_type_s      | 00010
- command_target_s   | 00011
- command_id_s       | 00100
- command_type_s     | 00101
- command_data_s     | 00110
- command_checksum_s | 00111
- ping_s             | 01000
- read_s             | 01001
- write_s            | 01010
- read_response_s    | 01011
- write_response_s   | 01100
- ping_response_s    | 01101
- err_response_s     | 01110
- check_more_s       | 01111
- packet_checksum_s  | 10000
- dump_s             | 10001
---------------------------------
-Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <U_TpGenTx/FSM_19> on signal <r_state[1:3]> with user encoding.
 ----------------------
  State    | Encoding
@@ -2605,6 +2653,8 @@ INFO:Xst:2261 - The FF/Latch <r_header0_6> in Unit <IPv4Tx> is equivalent to the
 INFO:Xst:2261 - The FF/Latch <r_header0_7> in Unit <IPv4Tx> is equivalent to the following FF/Latch, which will be removed : <r_header0Checksum_7> 
 INFO:Xst:2261 - The FF/Latch <r_phyTxData_valid> in Unit <Eth1000BaseX8To16Mux> is equivalent to the following FF/Latch, which will be removed : <r_state_FSM_FFd1> 
 
+Optimizing unit <scrodEthernetExample> ...
+
 Optimizing unit <GtpS6Tile> ...
 
 Optimizing unit <SyncBit_1> ...
@@ -2612,8 +2662,6 @@ Optimizing unit <SyncBit_1> ...
 Optimizing unit <SyncBit> ...
 
 Optimizing unit <SyncBit_2> ...
-
-Optimizing unit <scrodEthernetExample> ...
 
 Optimizing unit <S6EthTop> ...
 
@@ -2695,7 +2743,7 @@ Optimizing unit <GtpS6> ...
 
 Optimizing unit <InitRst> ...
 
-Optimizing unit <CommandInterpreter> ...
+Optimizing unit <Axi_CommandInterpreter> ...
 
 Optimizing unit <TpGenTx> ...
 WARNING:Xst:1293 - FF/Latch <r_header3Checksum_4> has a constant value of 0 in block <G_UdpTxInstance[1].U_IPv4Tx>. This FF/Latch will be trimmed during the optimization process.
@@ -3272,7 +3320,7 @@ INFO:Xst:2261 - The FF/Latch <rEth_udpLength_1> in Unit <G_UdpTxInstance[1].U_Ud
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block scrodEthernetExample, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block scrodEthernetExample, actual ratio is 0.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <U_Fifo18x16> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <U_Fifo18x16> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <U_Fifo18x16> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
@@ -3515,6 +3563,11 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <U_Fifo18x16> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <U_Fifo18x16> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <U_Fifo18x16> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+FlipFlop U_CommandInterpreter/fsmfake20_0 has been replicated 2 time(s)
+FlipFlop U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[0].U_UdpBufferTx/rEth_state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[0].U_UdpBufferTx/rEth_state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[1].U_UdpBufferTx/rEth_state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[1].U_UdpBufferTx/rEth_state_FSM_FFd2 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -3534,8 +3587,8 @@ Unit <U_MacRx> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2839
- Flip-Flops                                            : 2839
+# Registers                                            : 2599
+ Flip-Flops                                            : 2599
 # Shift Registers                                      : 9
  5-bit shift register                                  : 9
 
@@ -3560,32 +3613,33 @@ Top Level Output File Name         : scrodEthernetExample.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 8181
+# BELS                             : 5922
 #      GND                         : 42
-#      INV                         : 317
-#      LUT1                        : 696
-#      LUT2                        : 852
-#      LUT3                        : 557
-#      LUT4                        : 771
-#      LUT5                        : 571
-#      LUT6                        : 1338
-#      MUXCY                       : 1508
-#      MUXF7                       : 113
+#      INV                         : 261
+#      LUT1                        : 352
+#      LUT2                        : 723
+#      LUT3                        : 487
+#      LUT4                        : 770
+#      LUT5                        : 419
+#      LUT6                        : 980
+#      MUXCY                       : 952
+#      MUXF7                       : 88
 #      VCC                         : 31
-#      XORCY                       : 1385
-# FlipFlops/Latches                : 4196
-#      FD                          : 100
+#      XORCY                       : 817
+# FlipFlops/Latches                : 3956
+#      FD                          : 168
 #      FDC                         : 583
 #      FDCE                        : 342
-#      FDE                         : 227
+#      FDE                         : 179
 #      FDP                         : 137
 #      FDPE                        : 20
-#      FDR                         : 278
-#      FDRE                        : 2490
+#      FDR                         : 306
+#      FDRE                        : 2202
 #      FDS                         : 1
 #      FDSE                        : 18
-# RAMS                             : 74
-#      RAM32M                      : 6
+# RAMS                             : 81
+#      RAM16X1D                    : 2
+#      RAM32M                      : 11
 #      RAM64M                      : 3
 #      RAMB16BWER                  : 62
 #      RAMB8BWER                   : 3
@@ -3611,19 +3665,19 @@ Selected Device : 6slx150tfgg676-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            4196  out of  184304     2%  
- Number of Slice LUTs:                 5147  out of  92152     5%  
-    Number used as Logic:              5102  out of  92152     5%  
-    Number used as Memory:               45  out of  21680     0%  
-       Number used as RAM:               36
+ Number of Slice Registers:            3956  out of  184304     2%  
+ Number of Slice LUTs:                 4061  out of  92152     4%  
+    Number used as Logic:              3992  out of  92152     4%  
+    Number used as Memory:               69  out of  21680     0%  
+       Number used as RAM:               60
        Number used as SRL:                9
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7485
-   Number with an unused Flip Flop:    3289  out of   7485    43%  
-   Number with an unused LUT:          2338  out of   7485    31%  
-   Number of fully used LUT-FF pairs:  1858  out of   7485    24%  
-   Number of unique control sets:       299
+ Number of LUT Flip Flop pairs used:   6256
+   Number with an unused Flip Flop:    2300  out of   6256    36%  
+   Number with an unused LUT:          2195  out of   6256    35%  
+   Number of fully used LUT-FF pairs:  1761  out of   6256    28%  
+   Number of unique control sets:       285
 
 IO Utilization: 
  Number of IOs:                           9
@@ -3655,8 +3709,8 @@ Clock Information:
 ------------------------------------------------+------------------------+-------+
 Clock Signal                                    | Clock buffer(FF name)  | Load  |
 ------------------------------------------------+------------------------+-------+
-U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>| DCM_SP:CLK0            | 3986  |
 U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>| DCM_SP:CLKDV           | 254   |
+U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>| DCM_SP:CLK0            | 3753  |
 fabClkP                                         | IBUFGDS+BUFG           | 39    |
 ------------------------------------------------+------------------------+-------+
 
@@ -3668,7 +3722,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 8.551ns (Maximum Frequency: 116.945MHz)
+   Minimum period: 7.864ns (Maximum Frequency: 127.161MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
    Maximum combinational path delay: No path found
@@ -3679,38 +3733,46 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>'
-  Clock period: 8.551ns (frequency: 116.945MHz)
-  Total number of paths / destination ports: 286147 / 13382
+  Clock period: 7.864ns (frequency: 127.161MHz)
+  Total number of paths / destination ports: 558731 / 12620
 -------------------------------------------------------------------------
-Delay:               8.551ns (Levels of Logic = 11)
-  Source:            U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[1].U_UdpBufferRx/U_UdpRxAxiFifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/dout_i_4 (FF)
-  Destination:       U_CommandInterpreter/r_errFlags_0 (FF)
+Delay:               7.864ns (Levels of Logic = 19)
+  Source:            U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[1].U_UdpBufferRx/U_UdpRxAxiFifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i (FF)
+  Destination:       U_CommandInterpreter/txDataLast (FF)
   Source Clock:      U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0> rising
   Destination Clock: U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0> rising
 
-  Data Path: U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[1].U_UdpBufferRx/U_UdpRxAxiFifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/dout_i_4 to U_CommandInterpreter/r_errFlags_0
+  Data Path: U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[1].U_UdpBufferRx/U_UdpRxAxiFifo/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i to U_CommandInterpreter/txDataLast
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             10   0.447   1.221  U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/dout_i_4 (m_axis_tdata<3>)
-     end scope: 'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[1].U_UdpBufferRx/U_UdpRxAxiFifo:m_axis_tdata<3>'
-     end scope: 'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[1].U_UdpBufferRx:userRxData<3>'
-     end scope: 'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore:userRxData<1><27>'
-     end scope: 'U_S6EthTop/U_Eth1000BaseXCore:userRxData<1><27>'
-     end scope: 'U_S6EthTop:userRxData<1><27>'
-     begin scope: 'U_CommandInterpreter:rxData<27>'
-     LUT6:I0->O            1   0.203   0.808  n0001<31>11 (n0001<31>11)
-     LUT3:I0->O            3   0.205   0.651  n0001<31>14 (n0001<31>1)
-     LUT6:I5->O            3   0.205   0.879  n0029<31> (n0029)
-     LUT6:I3->O            1   0.205   0.580  _n1003_inv2 (_n1003_inv2)
-     LUT6:I5->O            1   0.205   0.580  _n1003_inv3 (_n1003_inv4)
-     LUT6:I5->O            2   0.205   0.617  _n1003_inv4 (_n1003_inv5)
-     LUT5:I4->O           17   0.205   1.028  _n1003_inv5_rstpot (_n1003_inv5_rstpot)
-     LUT3:I2->O            1   0.205   0.000  r_errFlags_0_dpot (r_errFlags_0_dpot)
-     FDRE:D                    0.102          r_errFlags_0
+     FDP:C->Q              1   0.447   0.579  U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i (U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i)
+     INV:I->O             48   0.206   1.520  U0/xst_fifo_generator/gaxis_fifo.axis_m_axis_tvalid1_INV_0 (m_axis_tvalid)
+     end scope: 'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[1].U_UdpBufferRx/U_UdpRxAxiFifo:m_axis_tvalid'
+     end scope: 'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[1].U_UdpBufferRx:userRxDataValid'
+     end scope: 'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore:userRxDataValid<1>'
+     end scope: 'U_S6EthTop/U_Eth1000BaseXCore:userRxDataValid<1>'
+     end scope: 'U_S6EthTop:userRxDataValid<1>'
+     begin scope: 'U_CommandInterpreter:rxDataValid'
+     LUT4:I3->O           15   0.205   1.086  mux32121_1 (mux32121)
+     LUT5:I3->O            2   0.203   0.845  mux5411 (seq.Max_Index[31]_seq.Max_Index[31]_mux_8_OUT<2>)
+     LUT6:I3->O            1   0.205   0.000  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_lut<0> (Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<0> (Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<1> (Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<2> (Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<3> (Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<4> (Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<5> (Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<6> (Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<7> (Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<8> (Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<9> (Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<9>)
+     MUXCY:CI->O          34   0.019   1.320  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<10> (txDataLast_glue_set)
+     INV:I->O              1   0.206   0.579  Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<10>_inv_INV_0 (Mcompar_seq.Max_Index[31]_seq.Index[31]_equal_13_o_cy<10>_inv)
+     FDR:D                     0.102          txDataLast
     ----------------------------------------
-    Total                      8.551ns (2.187ns logic, 6.364ns route)
-                                       (25.6% logic, 74.4% route)
+    Total                      7.864ns (1.936ns logic, 5.928ns route)
+                                       (24.6% logic, 75.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'fabClkP'
@@ -3745,7 +3807,7 @@ Clock to Setup on destination clock U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OU
                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------------------+---------+---------+---------+---------+
-U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>|    8.551|         |         |         |
+U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>|    7.864|         |         |         |
 fabClkP                                         |    1.436|         |         |         |
 ------------------------------------------------+---------+---------+---------+---------+
 
@@ -3760,15 +3822,15 @@ fabClkP        |    2.880|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 31.00 secs
-Total CPU time to Xst completion: 22.55 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 21.85 secs
  
 --> 
 
 
-Total memory usage is 558868 kilobytes
+Total memory usage is 545848 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 1080 (   0 filtered)
-Number of infos    :  330 (   0 filtered)
+Number of warnings : 1185 (   0 filtered)
+Number of infos    :  331 (   0 filtered)
 

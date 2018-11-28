@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-11-16T23:08:20</DateModified>
+  <DateModified>2018-11-23T18:46:23</DateModified>
   <ModuleName>scrodEthernetExample</ModuleName>
   <SummaryTimeStamp>2018-11-16T01:21:33</SummaryTimeStamp>
   <SavedFilePath>/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/ise/iseconfig/scrodEthernetExample.xreport</SavedFilePath>

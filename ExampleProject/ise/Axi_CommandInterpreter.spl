@@ -1,0 +1,12 @@
+[Inputs]
+usrClk
+rxDataValid
+rxDataLast
+txDataReady
+=rxData[31:0]=
+[Outputs]
+rxDataReady
+txDataValid
+txDataLast
+=txData[31:0]=
+[BiDir]
