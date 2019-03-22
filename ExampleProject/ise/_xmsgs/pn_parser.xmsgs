@@ -8,7 +8,121 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXMacRx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseX16To8Mux.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseX8To16Mux.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXAbilityMatch.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXAutoNeg.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXCore.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXMacRx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXMacTx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXPkg.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXRxSync.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/ArpIpArbiter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/ArpPacketRx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/ArpPacketTx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/ArpResponder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/EthCore.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/EthLayerRx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/EthLayerTx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/EthRx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/EthTx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/GigabitEthPkg.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/IPv4Rx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/IPv4Tx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/IpV4Arbiter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/UdpBufferRx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/UdpBufferTx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/General/rtl/UdpTxFragmenter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/Ethernet/S6/rtl/S6EthTop.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/Axi_Commandreceiver.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/CrcPkg.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/InitRst.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/SyncBit.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/TpGenTx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/UtilityPkg.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/axiDWORDBi.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/General/rtl/axiStreamHelper.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/Transceivers/S6/GtpS6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/firmware-general/Transceivers/S6/GtpS6Tile.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/Documents/Firmware/t/firmware-ethernet/ExampleProject/projectSrc/scrodEthernetExample.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
